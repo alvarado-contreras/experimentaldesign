@@ -1,5 +1,11 @@
 ---
-pagetitle: "Unidad 1: Introducción al Diseño Experimental"
+title: "Diseño de Experimentos"
+subtitle: "Introducción al diseño experimental"
+pagetitle: "Introducción al DOE"
+author-meta: José A. Alvarado-Contreras
+affiliation-meta: Universidad de Los Andes - Venezuela
+author: José A. Alvarado-Contreras
+affilation: Universidad Francisco de Paula Santander
 lang: es
 format:
   revealjs:
@@ -17,22 +23,20 @@ format:
     highlight-style: github
     fig-align: center
     smaller: false
+    auto-stretch: false
 ---
 
-
-
-# Diseño de Experimentos {style="margin-top: 45px; font-size: 1.4em;"}
+# Diseño de Experimentos {style="margin-top: 45px; font-size: 1.2em;"}
 
 <h3 style="font-size: 1.0em;"> Introducción al Diseño Experimental </h3>
 <hr>
 
-<h4 style="font-size: 0.7em; opacity: 0.6""> José Alvarado-Contreras </h4>
-<h4 style="font-size: 0.6em; opacity: 0.6"> 2026 </h4>
+<h4 style="font-size: 0.6em; opacity: 0.6"> Agosto 2026 </h4>
 
 
 
 
-## Unidades temáticas {style="font-size: 1.0em;"}
+## Unidades temáticas {background-color="#e4e4e7" style="font-size: 1.0em;"}
 
 - **Unidad 1:** Introducción al diseño experimental 
 - **Unidad 2:** Fundamentos estadísticos para el diseño experimental
@@ -44,51 +48,43 @@ format:
 
 
 
-## Unidad 1 
-
-:::{style="font-size: 1.0em; margin-top: -0.5em; margin-bottom: 1.5em;"}
-Introducción al Diseño Experimental
-:::
+## Introducción al Diseño Experimental
 
 **1.** Conceptos básicos y terminología del diseño de experimentos
 
-**2.** Planificación y estrategia de experimentación
+**2.** Casos de estudio
 
-**3.** Introducción a Python y R
+**3.** Taxonomía de variables
 
+**4.** Planificación y estrategia de experimentación
 
-
-
-## Conceptos básicos y terminología del diseño de experimentos {style="font-size: 0.85em; line-height: 0.9;"}
-
-**1. Introducción al experimento**
-
-- ¿Qué es (y qué no es) un experimento?
-- Experimentar vs. observar
-
-**2. Objetivos y definición del DOE**
-
-- Objetivos y definición del DOE
-- Visiones del DOE
-
-**3. Terminología fundamental**
-
-- Factor, observación, prueba/corrida, réplica, modelo empírico
-
-**4. Casos de estudio**
-
-- Mezcla de concreto
-- Accidente Challenger
-
-**5. Taxonomía de variables**
-
-- Factores de diseño y variables de respuesta
-- Variables extrañas, de confusión, moderadoras e intervinientes
+**5.** Entorno de cómputo: Python y R
 
 
 
 
-## Experimento {background-color="#2d3748"}
+## Conceptos básicos y terminología del diseño de experimentos
+
+1. **Introducción al experimento**
+   - ¿Qué es (y qué no es) un experimento?
+   - Experimentar vs. observar
+2. **Objetivos y definición del DOE**
+    - Objetivos y definición del DOE
+3. **Terminología fundamental**
+    - Factor de diseño, variable de respuesta, observación, prueba/corrida, réplica, modelo empírico
+    - Pilares del DOE: aleatorización, replicación, bloqueo
+    - Variables extrañas, de confusión, moderadoras e intervinientes
+
+
+
+
+
+# 1.1 Introducción al experimento {background-color="#2d3748"}
+
+
+
+
+# Experimento {background-color="#2d3748"}
 
 Un experimento es una intervención activa donde se manipulan entradas (factores) intencionalmente 
 para medir sus efectos en las salidas (respuestas) bajo condiciones controladas.
@@ -124,7 +120,7 @@ Un "ensayo y error" sin estructura: cambiar cosas sin un diseño que permita ais
 
 
 
-## Experimentar vs. observar {background-color="#e2e8f0"}
+## Experimentar vs. observar {background-color="#e2e8f0" style="font-size: 1.0em;"}
 
 - Correlación no es causalidad.
 
@@ -144,7 +140,7 @@ Un "ensayo y error" sin estructura: cambiar cosas sin un diseño que permita ais
 
 
 
-## Diseño de Experimentos DOE {background-color="#2d3748"}
+# Diseño de Experimentos DOE {background-color="#2d3748"}
 
 Metodología estadística para planear cambios controlados en las variables de un proceso y medir su efecto en el resultado.
 
@@ -153,29 +149,52 @@ Metodología estadística para planear cambios controlados en las variables de u
 
 ## Objetivos del DOE {background-color="#e2e8f0"}
 
-**1. Cribado** 
+1. **Cribado** | Identificar qué factores realmente influyen en el resultado y descartar los que no.
 
-&emsp; Identificar qué factores realmente influyen en el resultado y descartar los que no.
+2. **Optimización** | Encontrar la combinación de factores que lleva la respuesta al valor deseado.
 
-**2. Optimización** 
-
-&emsp; Encontrar la combinación de factores que lleva la respuesta al valor deseado.
-
-**3. Robustez** 
-
-&emsp; Lograr estabilidad en el sistema ante variaciones que no se pueden controlar.
+3. **Robustez** | Lograr estabilidad en el sistema ante variaciones que no se pueden controlar.
 
 
 
 
-## Factor {background-color="#2d3748"}
+# Variable de respuesta {background-color="#2d3748"}
+
+La variable dependiente que se mide al final de cada corrida experimental para evaluar el efecto de los factores. Es lo que el experimento busca explicar.
+
+
+
+
+## Características de la variable de respuesta {background-color="#e2e8f0"}
+
+- Se **observa y mide**, no se manipula
+- Refleja el **efecto combinado** de factores controlados y variables extrañas
+- Debe ser **cuantificable** de forma objetiva y repetible
+- Su variabilidad es la que se busca **explicar estadísticamente**
+- Puede haber **una o varias** variables de respuesta en un mismo experimento
+
+
+
+
+# Factor de diseño {background-color="#2d3748"}
 
 Variable independiente controlable que se investiga en el experimento para determinar su impacto sobre la respuesta.
 
 
 
 
-## Observación {background-color="#2d3748"}
+## Características del factor de diseño {background-color="#e2e8f0"}
+
+- Son fijados **deliberadamente** por el experimentador, no ocurren al azar
+- Se establecen en **niveles o tratamientos** definidos
+- Se presume una relación de **causa-efecto** sobre la respuesta
+- Pueden ser **cuantitativos** o **cualitativos**
+- Su número y niveles determinan el **diseño experimental** a usar
+
+
+
+
+# Observación {background-color="#2d3748"}
 
 Valor numérico o dato puntual medido y registrado para la variable de respuesta 
 en una corrida experimental específica.
@@ -185,8 +204,7 @@ en una corrida experimental específica.
 
 
 
-
-## Prueba [(Corrida Experimental)]{style="font-size: 65%;"} {background-color="#2d3748"}
+# Prueba [(Corrida Experimental)]{style="font-size: 65%;"} {background-color="#2d3748"}
 
 La ejecución individual del proceso bajo una combinación de niveles de factores predeterminada para obtener una o más observaciones.
 
@@ -200,89 +218,46 @@ Repetición independiente de una prueba o corrida experimental completa bajo las
 
 
 
-## Modelo empírico {background-color="#2d3748"}
+# Modelo empírico {background-color="#2d3748"}
 
 Ecuación matemática o función desarrollada a partir de los datos experimentales para relacionar la respuesta con los factores. Se utiliza para predecir el comportamiento del sistema cuando no se dispone de un modelo teórico.
 
 
 
 
-## Visiones del DOE {background-color="#e2e8f0"}
+## Pilares del DOE {background-color="#e2e8f0"}
 
-**1.** Proceso como sistema controlable
-
-::: {style="text-align: center; height: 100%; display: flex; align-items: center; justify-content: center;"}
-
-*Entradas → Proceso → Salidas*
-
-:::
-
-**2.** Aprendizaje progresivo
-
-::: {style="text-align: center; height: 100%; display: flex; align-items: center; justify-content: center;"}
-
-*Se experimenta por ciclos, no de una sola vez*
-
-:::
-
-**3.** Rigor estadístico
-
-::: {style="text-align: center; height: 100%; display: flex; align-items: center; justify-content: center;"}
-
-*Conclusiones confiables, no producto del azar*
-
-:::
-
-**4.** Herramienta de decisión
-
-::: {style="text-align: center; height: 100%; display: flex; align-items: center; justify-content: center;"}
-
-*Cribado → Caracterización → Optimización*
-
-:::
+1. **Aleatorización** | Valida la inferencia estadística neutralizando el efecto de variables extrañas no controladas (asigna tratamientos al azar).
+2. **Replicación** | Permite estimar la varianza del error experimental y discriminar si el efecto es señal o puro ruido.
+3. **Bloqueo** | Aisla la variabilidad conocida pero no de interés (lotes de material, turnos de trabajo, operadores).
 
 
 
 
-## Aporte central del DOE {background-color="#e2e8f0"}
-
-Estructurar la toma de datos antes de ejecutar el proceso, no después. Solo así el análisis tiene con qué responder la pregunta planteada.
+# 1.2 Casos de estudio {background-color="#2d3748"}
 
 
 
 
-## Escenario {background-color="#f2f2f2"}
+## Caso 1: Mezcla de concreto {background-color="#f2f2f2"}
 
-Se busca una mezcla de concreto que maximice la resistencia a la compresión y minimice el costo, variando tres factores: relación agua/cemento, dosis de aditivo superplastificante y tiempo de curado.
+Se busca una mezcla de concreto que maximice la resistencia a la compresión y minimice el costo, variando tres factores:
 
-
-
-
-## Diseñar sin experimento {background-color="#f2f2f2"}
-
-1. Se prueba bajar la relación agua/cemento, dejando fijo aditivo y curado. Se observa que la resistencia sube.
-
-2. Después prueba aumentar la dosis de aditivo, con la relación agua/cemento anterior. Se observa que la mezcla es más trabajable sin perder resistencia.
-
-3. No se varía el tiempo de curado junto con los otros dos factores ya que "28 días es el estándar".
+- Relación agua/cemento
+- Dosis de aditivo superplastificante
+- Tiempo de curado
 
 
 
 
-## Decisión {background-color="#f2f2f2"}
+## El problema del enfoque tradicional (OFAT) {background-color="#f2f2f2"}
 
-::: {style="text-align: center; justify-content: center;"}
+El enfoque tradicional de **un factor a la vez** (*One Factor at a Time*) paraliza el análisis:
 
-La mezcla óptima es agua/cemento bajo + aditivo alto + curado estándar de 28 días.
-
-:::
-
-
-
-
-## El problema {background-color="#f2f2f2"}
-
-En este diseño de "un factor a la vez" no exploró la interacción entre la dosis de aditivo y el tiempo de curado necesario. Es posible que un superplastificante en dosis alta retarde la hidratación del cemento, y que con relación agua/cemento baja, esa mezcla necesite más de 28 días para alcanzar la resistencia de diseño.
+- Varía un solo factor mientras mantiene los demás congelados en valores arbitrarios.
+- **Incapacidad de detectar interacciones:** Asume erróneamente que el efecto del aditivo no cambia según el tiempo de curado.
+- Requiere más pruebas totales y ofrece menor cobertura del espacio de diseño.
+- Corre el riesgo de concluir en óptimos falsos.
 
 
 
@@ -293,6 +268,11 @@ En este diseño de "un factor a la vez" no exploró la interacción entre la dos
 - **Usar solo 2 niveles por factor (alto/bajo)**, bastan 8 combinaciones para cubrir todos los cruces posibles, muchas menos corridas de las que parece.
 - **Replicar cada combinación**, por ejemplo, 3 probetas para distinguir efecto real de variación propia del concreto.
 - **Analizar los resultados** buscando explícitamente interacción aditivo-curado, no solo el efecto de cada factor por separado.
+
+
+
+
+## Caso 2: Accidente del Transbordador Challenger {background-color="#f2f2f2"}
 
 
 
@@ -312,37 +292,7 @@ En este diseño de "un factor a la vez" no exploró la interacción entre la dos
 
 
 
-## Costos del accidente Challenger {background-color="#f2f2f2"}
-
-- **Humano:** murieron los siete tripulantes, incluida la primera civil en volar al espacio.
-- **Institucional:** 32 meses de pausa en el programa de transbordadores para rediseñar los cohetes y revisar protocolos de seguridad.
-- **Cultural/organizacional:** se expuso una cultura donde las advertencias técnicas no llegaban con suficiente peso a quienes decidían.
-- **Confianza pública:** se rompió la percepción del transbordador como un medio de viaje espacial rutinario y seguro.
-- **Monetario:** pérdida estimada de 3.000 millones de dólares (vehículo y misión), más 40-65 millones en costos de investigación.
-- **Legal:** acuerdos económicos entre el gobierno, Morton Thiokol y las familias de los tripulantes.
-
-
-
-
-## En qué falló el análisis {background-color="#f2f2f2"}
-
-- **Filtraron los datos antes de analizarlos:** solo se revisaron los vuelos con fallo de O-ring, excluyendo los exitosos.
-- **La probabilidad de fallo calculada resultó más baja** de lo que era en realidad.
-- **El patrón temperatura-daño quedó oculto** por el sesgo en los datos usados.
-
-
-
-
-## Cómo se debió analizar {background-color="#f2f2f2"}
-
-- Incluir todos los vuelos, exitosos y fallidos, no solo los casos de fallo.
-- Cruzar temperatura con daño observado en el conjunto completo de datos.
-- Detectar la tendencia antes del lanzamiento, no después del accidente.
-
-
-
-
-## Un análisis observacional no bastó {background-color="#2d3748"}
+## Un análisis observacional no bastó {background-color="#f2f2f2"}
 
 Corregir el sesgo en los datos históricos habría mostrado la correlación, 
 pero seguía siendo inferida, no probada. Pocos vuelos a baja temperatura, 
@@ -371,116 +321,232 @@ Para saberlo con certeza, faltaba experimentar.
 
 
 
+## Lección DoE del caso Challenger {background-color="#e2e8f0"}
+
+El caso Challenger es el ejemplo histórico definitivo de cómo la presencia de **variables de confusión** no aisladas (la temperatura ambiental actuando sobre la rigidez del elastómero) y la ausencia de **replicación experimental controlada** pueden derivar en decisiones fatales basadas en datos puramente observacionales.
+
+
+
+
+# 1.3 Taxonomía de variables {background-color="#2d3748"}
+
+
+
+
 ## Taxonomía de variables {background-color="#2d3748"}
 
-Todo experimento involucra más que el factor de interés: hay otras variables 
-en juego. Distinguirlas correctamente es lo que separa un análisis correcto 
-de uno engañoso.
+Todo experimento involucra más que el factor de interés: hay otras variables en juego.
+
+- **Variables fundamentales:** el factor de diseño y la variable de respuesta; el "qué se manipula" y el "qué se mide".
+- **Variables de riesgo:** extrañas, de confusión, moderadoras e intervinientes; suelen confundirse entre sí.
 
 
 
 
-## Factores de diseño [(Con más detalles)]{style="font-size: 65%;"} {background-color="#2d3748"}
+## Taxonomía: Variables de ruido e interferencia {background-color="#e2e8f0"}
 
-Son las variables se **eligen y controlan a propósito**, fijando sus niveles antes del experimento, para ver si causan un efecto en el resultado.
+| Dimensión | Variable extraña | Variable de confusión |
+| :--- | :--- | :--- |
+| **¿Qué es?** | Ruido ambiental o de proceso no deseado. | Variable extraña que cambia *sistemáticamente* junto al factor principal. |
+| **Efecto** | Aumenta el error experimental (dificulta ver la señal). | Distorsiona el efecto real; simula o enmascara la causa verdadera. |
+| **Solución DoE** | **Aleatorización** y **Bloqueo**. | **Diseño factorial** y control de condiciones previas. |
 
 
-
-
-## Características de los factores de diseño {background-color="#e2e8f0"}
-
-- Son fijados **deliberadamente** por el experimentador, no ocurren al azar
-- Se establecen en **niveles o tratamientos** definidos
-- Se presume una relación de **causa-efecto** sobre la respuesta
-- Pueden ser **cuantitativos** o **cualitativos**
-- Su número y niveles determinan el **diseño experimental** a usar
+[*Caso del Challenger:* La temperatura operó como variable de confusión al no aislarse mediante pruebas experimentales previas.]{style="font-size: 65%; text-align: left; display: block;"}
 
 
 
 
-## Variables de respuesta [(Variables dependientes/Criterio)]{style="font-size: 65%;"} {background-color="#2d3748"}
+## Taxonomía: Variables de mecanismo e Interacción {background-color="#e2e8f0"}
 
-Es lo que **se mide** al final del experimento para saber qué efecto tuvo el factor de diseño. Es el resultado que queremos explicar.
+| Dimensión | Variable moderadora (Interacción) | Variable interviniente (Mediadora) |
+| :--- | :--- | :--- |
+| **¿Qué es?** | Variable controlada que altera la fuerza/dirección del factor principal. | Proceso interno o mecanismo no medible directamente. |
+| **Efecto** | El impacto del Factor A *depende del nivel* del Factor B. | Explica el *porqué* físico/químico del resultado. |
+| **Solución DoE** | **Incluirla formalmente como factor** en un diseño factorial. | Modulación teórica o análisis de mediación posterior. |
 
-
-
-
-## Características de las variables de respuesta {background-color="#e2e8f0"}
-
-- Se **observan y miden**, no se manipulan
-- Reflejan el **efecto combinado** de factores controlados y variables extrañas
-- Deben ser **cuantificables** de forma objetiva y repetible
-- Su variabilidad es la que se busca **explicar estadísticamente**
-- Puede haber **una o varias** variables de respuesta en un mismo experimento
+[*Caso del Concreto:* En el concreto, la dosis de aditivo moderó el tiempo de curado requerido para alcanzar la resistencia.]{style="font-size: 65%; text-align: left; display: block;"}
 
 
 
 
-##  Variables extrañas {background-color="#2d3748"}
-
-Son **todas las demás variables** que no son el factor de interés, pero que también podrían afectar la respuesta. Si no se controlan, aumentan el ruido (error) del experimento o distorsionan los resultados.
+# 1.4 Planificación y estrategia de experimentación {background-color="#2d3748"}
 
 
 
 
-## Características de las variables extrañas {background-color="#e2e8f0"}
+## Planificación y estrategia de experimentación {background-color="#e2e8f0"}
 
-- **No son de interés** para el estudio, pero pueden influir en la respuesta
-- Pueden ser **conocidas o desconocidas** para el experimentador
-- Si no se controlan, aumentan el **error experimental**
-- Si varían de forma sistemática, pueden generar **sesgo** en los resultados
-- Se controlan mediante **aleatorización, bloqueo o control experimental**
+El éxito de un experimento se decide **antes de tomar la primera medición**. Un diseño estadístico robusto previene el desperdicio de recursos y garantiza la validez de los resultados.
 
-
-
-
-## Variables de confusión {background-color="#2d3748"} 
-
-Son variables extrañas **especialmente peligrosas**: cambian al mismo tiempo que el factor de diseño, por lo que no se puede saber si el efecto observado se debe al factor o a ellas. *Lo que pasó con la temperatura en el caso Challenger.*
+- **Reconocimiento del problema** | Definir con claridad el objetivo y la pregunta de investigación.
+- **Elección de la variable de respuesta** | Garantizar que sea cuantitativa, precisa y objetiva.
+- **Selección de factores y niveles** | Definir qué variables se manipularán y en qué rangos operarán.
+- **Determinación del tamaño de muestra** | Calcular el número de réplicas necesarias para alcanzar la potencia estadística deseada.
 
 
 
 
-## Características de las variables de confusión {background-color="#e2e8f0"}
+## Objetivos vs. etapas [(no es lo mismo)]{style="font-size: 65%;"} {background-color="#e2e8f0"}
 
-- Están **correlacionadas** tanto con el factor de diseño como con la respuesta
-- Varían **sistemáticamente**, no al azar, junto con el factor de interés
-- Impiden **aislar el efecto causal** real del factor de diseño
-- Son la principal causa de conclusiones **erróneas o sesgadas**
-- Se previenen con **aleatorización** o diseño experimental adecuado
+- Los **objetivos** (Cribado, Optimización, Robustez) responden a **para qué** se experimenta.
+- Las **etapas** (Cribado → Caracterización → Optimización) responden a **cómo se organiza** un programa experimental en el tiempo.
 
+Ambos comparten Cribado y Optimización porque son, a la vez, un objetivo y una fase del proceso.
 
-
-
-## Variables moderadoras [(Interacciones)]{style="font-size: 65%;"} {background-color="#2d3748"} 
-
-Son variables controladas que **cambian qué tan fuerte (o en qué dirección)** actúa el factor de diseño sobre la respuesta. No son el efecto principal, sino que "modifican" ese efecto.
+La Robustez no es una fase aparte: se persigue **dentro** de la etapa de Optimización, ajustando el sistema para que sea estable ante variaciones no controladas.
 
 
 
 
-## Características moderadoras {background-color="#e2e8f0"}
+# Cribado {background-color="#2d3748"}
 
-- **Sí se controlan e incluyen** en el diseño
-- Modifican la **magnitud o dirección** del efecto del factor principal
-- Su presencia se detecta mediante el análisis de **interacciones** 
-- Permiten entender que el efecto de un factor **"depende de" otro**
-- Son clave para decidir si conviene un diseño **factorial**
+Etapa donde se identifican, de una lista amplia de factores candidatos, cuáles influyen realmente en la respuesta, descartando los que no tienen efecto significativo.
 
 
 
 
-## Variables intervinientes [(Variables mediadoras)]{style="font-size: 65%;"} {background-color="#2d3748"}
+## Características del cribado {background-color="#e2e8f0"}
 
-Son procesos internos que **no se pueden medir directamente**, pero que explican *por qué* el factor produce el efecto en la respuesta. Se ubican conceptualmente en el camino entre causa y efecto.
+- Trabaja con una **lista amplia** de factores candidatos
+- Usa diseños **económicos** (pocas corridas por factor evaluado)
+- Prioriza **detectar efectos grandes**, no medir con precisión
+- Su resultado es una lista **reducida** de factores relevantes
+- Antecede siempre a la Caracterización y la Optimización
 
 
 
 
-## Características variables intervinientes {background-color="#e2e8f0"}
+## Caso de estudio: Cribado {background-color="#f2f2f2"}
 
-- Son **conceptuales o abstractas**, difíciles de observar directamente
-- Se ubican **entre** la variable independiente y la de respuesta (mediación)
-- Ayudan a explicar el **mecanismo o "por qué"** del efecto observado
-- No se manipulan ni siempre se miden, pero se **infieren teóricamente**
-- Son el foco típico de un **análisis de mediación**
+Una empresa constructora busca reducir el tiempo de asentamiento diferencial en las cimentaciones de un edificio. Un ingeniero geotécnico identifica 7 factores candidatos: profundidad de la cimentación, tipo de suelo compactado, método de compactación, contenido de humedad del relleno, espaciamiento entre pilotes, diámetro de pilote y tiempo de precarga.
+
+¿Es razonable investigar los 7 factores a fondo desde el inicio? ¿Qué haría primero, y por qué?
+
+
+
+
+## Qué responde el cribado {background-color="#f2f2f2"}
+
+No busca modelar con precisión cómo cada factor afecta el asentamiento, busca responder una pregunta más simple y económica: **¿este factor importa o no?** Los que sí importan pasan a Caracterización; los que no, se descartan.
+
+
+
+# Caracterización {background-color="#2d3748"}
+
+Etapa donde se estudian las interacciones entre los factores ya identificados como relevantes, evaluando cómo se relacionan entre sí antes de buscar el punto óptimo.
+
+
+
+
+## Características de la caracterización {background-color="#e2e8f0"}
+
+- Trabaja con la **lista reducida** de factores tras el cribado
+- Estudia **interacciones** entre factores, no solo efectos individuales
+- Usa diseños **factoriales completos**, más corridas que el cribado
+- Busca **entender la relación** factor-respuesta, no solo detectarla
+- Antecede a la optimización, una vez comprendido el sistema
+
+
+
+## Caso de estudio: Caracterización {background-color="#f2f2f2"}
+
+Tras el cribado del caso anterior, el ingeniero geotécnico determinó que solo 3 de los 7 factores afectan significativamente el asentamiento: espaciamiento entre pilotes, diámetro de pilote y tiempo de precarga. Ahora corre un diseño factorial completo con estos 3 factores.
+
+¿Qué gana el ingeniero al pasar de cribado a un factorial completo? ¿Por qué no bastaba con saber que estos 3 factores "importan"?
+
+
+
+
+## Qué responde la caracterización {background-color="#f2f2f2"}
+
+Cribado dijo *cuáles* factores importan. Caracterización responde *cómo* interactúan entre sí: ¿el efecto del espaciamiento entre pilotes cambia según el diámetro usado? Sin esto, no se sabe si conviene ajustar los factores juntos o por separado.
+
+
+
+
+# Optimización {background-color="#2d3748"}
+
+Etapa donde se ajusta con precisión el nivel de los factores relevantes para llevar la respuesta a su mejor valor posible, minimizando, maximizando o alcanzando un objetivo específico.
+
+
+
+
+## Características de la optimización {background-color="#e2e8f0"}
+
+- Trabaja con los factores ya **comprendidos** en la caracterización
+- Ajusta niveles con **precisión**, no solo alto/bajo
+- Suele requerir **modelos cuadráticos** para capturar curvatura
+- Busca el **punto óptimo**, no solo un mejor tratamiento entre pocos
+- Es la etapa final del ciclo Cribado → Caracterización → Optimización
+
+
+
+
+## Caso de estudio: Optimización {background-color="#f2f2f2"}
+
+Con las interacciones ya comprendidas, el ingeniero busca ahora la combinación exacta de espaciamiento, diámetro y tiempo de precarga que minimiza el asentamiento diferencial, dentro de las restricciones de costo del proyecto.
+
+¿Por qué esta etapa no se pudo abordar directamente desde el cribado, sin pasar por caracterización?
+
+
+
+
+## Qué responde la optimización {background-color="#2d3748"}
+
+No basta con saber que los factores interactúan — hay que encontrar el punto exacto de operación. Aquí se ajustan niveles con precisión (no solo alto/bajo) para llevar el asentamiento a su valor mínimo posible.
+
+
+
+
+## Etapas del ciclo de experimentación {background-color="#e2e8f0"}
+
+El proceso experimental es una estrategia iterativa de aprendizaje continuo, estructurada en tres fases principales:
+
+:::: {style="display: flex; align-items: center; justify-content: center; gap: 15px; margin: 30px 0;"}
+
+::: {style="flex: 1; text-align: center; padding: 15px; background: rgba(45, 55, 72, 0.08); border-radius: 8px;"}
+**1. Cribado**
+
+*(Screening)*
+:::
+
+<div style="font-size: 1.5em; color: #2d3748;">→</div>
+
+::: {style="flex: 1; text-align: center; padding: 15px; background: rgba(45, 55, 72, 0.08); border-radius: 8px;"}
+**2. Caracterización**
+
+*(Mapeo de interacciones)*
+:::
+
+<div style="font-size: 1.5em; color: #2d3748;">→</div>
+
+::: {style="flex: 1; text-align: center; padding: 15px; background: rgba(45, 55, 72, 0.08); border-radius: 8px;"}
+**3. Optimización**
+
+*(Superficie de respuesta)*
+:::
+
+::::
+
+1. **Fase de Cribado** | Descartar variables irrelevantes y reducir una lista amplia de factores a solo aquellos con impacto significativo.
+2. **Fase de Caracterización** | Evaluar interacciones principales y comportamientos lineales entre los factores seleccionados.
+3. **Fase de Optimización** | Encontrar el punto de operación ideal ajustando curvaturas y modelos cuadráticos (Superficie de Respuesta).
+
+
+
+
+# 1.5 Entorno de cómputo {background-color="#2d3748"}
+
+
+
+
+## Introducción al software estadístico: Python y R {background-color="#e2e8f0"}
+
+La implementación moderna del Diseño de Experimentos requiere herramientas computacionales para generar matrices experimentales, automatizar la aleatorización y ajustar modelos estadísticos.
+
+- **Python:** Lenguaje multipropósito flexible. Ideal para integrar el DoE con modelos de aprendizaje automático (*Machine Learning*), optimización y flujos de trabajo computacionales.
+- **R:** Entorno diseñado específicamente para el análisis estadístico y la investigación empírica. Cuenta con el soporte más maduro en paquetes especializados para DoE.
+
+Ambos lenguajes son de código abierto y permiten garantizar la **reproducibilidad científica** de los experimentos.
+
