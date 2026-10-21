@@ -1,7 +1,8 @@
 project:
-  type: default
-  output-dir: docs
+  type: website
   render:
-    - unit1/index.qmd
-    - unit1/unidad3.qmd
+    - index.qmd
+    - unidad3.qmd
 
+website:
+  title: "Diseño experimental"

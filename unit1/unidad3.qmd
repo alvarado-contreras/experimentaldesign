@@ -27,56 +27,6 @@ format:
 ---
 
 
-## Resultados de aprendizaje
-
-Al finalizar la sesión, el estudiante podrá:
-
-- Seleccionar métodos de recopilación de datos justificando variable, resolución e incertidumbre requeridas.
-- Distinguir unidad experimental, submuestra, réplica y lectura repetida, e identificar pseudorreplicación.
-- Diferenciar control de calidad (QC) y aseguramiento de la calidad (QA) y asignar acciones concretas a cada uno.
-- Clasificar errores (aleatorio, sistemático, grosero) y relacionarlos con exactitud, precisión e incertidumbre.
-- Calcular e interpretar error absoluto y relativo, sesgo, desviación estándar y coeficiente de variación.
-- Proponer un plan de datos trazable para un experimento de materiales, con aleatorización o bloqueo.
-
-## Ruta de la sesión · 150 minutos
-
-| Bloque | Contenido | Actividad | Tiempo |
-|---|---|---|---:|
-| 1 | Planteamiento y métodos de recopilación | Pregunta inicial y Act. 1 | 35 min |
-| 2 | Control y aseguramiento de la calidad | Act. 2 | 30 min |
-| 3 | Análisis de errores y métricas | Act. 3 | 35 min |
-| 4 | Caso aplicado en equipos | Plan de datos | 30 min |
-| 5 | Puesta en común y cierre | Discusión | 20 min |
-
-**Dinámica:** explicación breve, preguntas de diagnóstico, ejemplos de ingeniería civil y resolución de un caso.
-
-::: {.notes}
-Los bloques 1 y 3 son los más densos. Si el tiempo se acorta, las láminas marcadas como "opcional" en las notas pueden omitirse sin perder el hilo conductor.
-:::
-
-
-## Pregunta inicial
-
-Un laboratorio ensaya tres probetas de concreto por cada dosificación y obtiene resistencias muy diferentes.
-
-**¿Cuál es la primera conclusión razonable?**
-
-- A. La dosificación no sirve.
-- B. El equipo está dañado.
-- C. Hay que investigar la variabilidad del material, del procedimiento y de la medición.
-- D. Se debe eliminar el resultado más bajo.
-
-::: {.callout-note}
-No se puede atribuir una diferencia a un factor experimental sin revisar cómo se obtuvieron los datos.
-:::
-
-::: {.notes}
-Respuesta: C. A y D adelantan una conclusión sin evidencia; B es posible, pero es una hipótesis entre varias, no la primera conclusión.
-Con n = 3 la estimación de la dispersión es muy pobre. En condiciones de laboratorio, la dispersión entre cilindros de una misma amasada suele ser del orden de 2 a 3 % (CV); las normas de ensayo (ASTM C39 / NTC 673) fijan rangos aceptables entre cilindros. Verificar valores en la edición vigente.
-Volver a esta pregunta en la lámina "Dónde vive la variabilidad".
-:::
-
-
 
 
 # Recopilación de datos {background-color="#2d3748"}
