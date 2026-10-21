@@ -1,26 +1,5 @@
 [
   {
-    "objectID": "unidad3.html#resultados-de-aprendizaje",
-    "href": "unidad3.html#resultados-de-aprendizaje",
-    "title": "Diseño de Experimentos",
-    "section": "Resultados de aprendizaje",
-    "text": "Resultados de aprendizaje\nAl finalizar la sesión, el estudiante podrá:\n\nSeleccionar métodos de recopilación de datos justificando variable, resolución e incertidumbre requeridas.\nDistinguir unidad experimental, submuestra, réplica y lectura repetida, e identificar pseudorreplicación.\nDiferenciar control de calidad (QC) y aseguramiento de la calidad (QA) y asignar acciones concretas a cada uno.\nClasificar errores (aleatorio, sistemático, grosero) y relacionarlos con exactitud, precisión e incertidumbre.\nCalcular e interpretar error absoluto y relativo, sesgo, desviación estándar y coeficiente de variación.\nProponer un plan de datos trazable para un experimento de materiales, con aleatorización o bloqueo."
-  },
-  {
-    "objectID": "unidad3.html#ruta-de-la-sesión-150-minutos",
-    "href": "unidad3.html#ruta-de-la-sesión-150-minutos",
-    "title": "Diseño de Experimentos",
-    "section": "Ruta de la sesión · 150 minutos",
-    "text": "Ruta de la sesión · 150 minutos\n\n\n\n\n\n\n\n\n\nBloque\nContenido\nActividad\nTiempo\n\n\n\n\n1\nPlanteamiento y métodos de recopilación\nPregunta inicial y Act. 1\n35 min\n\n\n2\nControl y aseguramiento de la calidad\nAct. 2\n30 min\n\n\n3\nAnálisis de errores y métricas\nAct. 3\n35 min\n\n\n4\nCaso aplicado en equipos\nPlan de datos\n30 min\n\n\n5\nPuesta en común y cierre\nDiscusión\n20 min\n\n\n\nDinámica: explicación breve, preguntas de diagnóstico, ejemplos de ingeniería civil y resolución de un caso.\n\nLos bloques 1 y 3 son los más densos. Si el tiempo se acorta, las láminas marcadas como “opcional” en las notas pueden omitirse sin perder el hilo conductor."
-  },
-  {
-    "objectID": "unidad3.html#pregunta-inicial",
-    "href": "unidad3.html#pregunta-inicial",
-    "title": "Diseño de Experimentos",
-    "section": "Pregunta inicial",
-    "text": "Pregunta inicial\nUn laboratorio ensaya tres probetas de concreto por cada dosificación y obtiene resistencias muy diferentes.\n¿Cuál es la primera conclusión razonable?\n\nA. La dosificación no sirve.\nB. El equipo está dañado.\nC. Hay que investigar la variabilidad del material, del procedimiento y de la medición.\nD. Se debe eliminar el resultado más bajo.\n\n\n\n\n\n\n\nNota\n\n\nNo se puede atribuir una diferencia a un factor experimental sin revisar cómo se obtuvieron los datos.\n\n\n\n\nRespuesta: C. A y D adelantan una conclusión sin evidencia; B es posible, pero es una hipótesis entre varias, no la primera conclusión. Con n = 3 la estimación de la dispersión es muy pobre. En condiciones de laboratorio, la dispersión entre cilindros de una misma amasada suele ser del orden de 2 a 3 % (CV); las normas de ensayo (ASTM C39 / NTC 673) fijan rangos aceptables entre cilindros. Verificar valores en la edición vigente. Volver a esta pregunta en la lámina “Dónde vive la variabilidad”."
-  },
-  {
     "objectID": "unidad3.html#plan-de-recopilación-de-datos",
     "href": "unidad3.html#plan-de-recopilación-de-datos",
     "title": "Diseño de Experimentos",
