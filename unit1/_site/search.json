@@ -1,0 +1,247 @@
+[
+  {
+    "objectID": "index.html#unidades-temáticas",
+    "href": "index.html#unidades-temáticas",
+    "title": "Diseño de Experimentos",
+    "section": "Unidades temáticas",
+    "text": "Unidades temáticas\n\nUnidad 1: Introducción al diseño experimental\nUnidad 2: Fundamentos estadísticos para el diseño experimental\nUnidad 3: Técnicas de recopilación de datos y medición\nUnidad 4: Diseños factoriales y superficies de respuesta\nUnidad 5: Estudios de caso y aplicaciones\nUnidad 6: Temas avanzados y tendencias futuras"
+  },
+  {
+    "objectID": "index.html#introducción-al-diseño-experimental",
+    "href": "index.html#introducción-al-diseño-experimental",
+    "title": "Diseño de Experimentos",
+    "section": "Introducción al Diseño Experimental",
+    "text": "Introducción al Diseño Experimental\n1. Conceptos básicos y terminología del diseño de experimentos\n2. Casos de estudio\n3. Taxonomía de variables\n4. Planificación y estrategia de experimentación\n5. Entorno de cómputo: Python y R"
+  },
+  {
+    "objectID": "index.html#conceptos-básicos-y-terminología-del-diseño-de-experimentos",
+    "href": "index.html#conceptos-básicos-y-terminología-del-diseño-de-experimentos",
+    "title": "Diseño de Experimentos",
+    "section": "Conceptos básicos y terminología del diseño de experimentos",
+    "text": "Conceptos básicos y terminología del diseño de experimentos\n\nIntroducción al experimento\n\n¿Qué es (y qué no es) un experimento?\nExperimentar vs. observar\n\nObjetivos y definición del DOE\n\nObjetivos y definición del DOE\n\nTerminología fundamental\n\nFactor de diseño, variable de respuesta, observación, prueba/corrida, réplica, modelo empírico\nPilares del DOE: aleatorización, replicación, bloqueo\nVariables extrañas, de confusión, moderadoras e intervinientes"
+  },
+  {
+    "objectID": "index.html#qué-no-es-un-experimento",
+    "href": "index.html#qué-no-es-un-experimento",
+    "title": "Diseño de Experimentos",
+    "section": "¿Qué no es un experimento?",
+    "text": "¿Qué no es un experimento?\nRecolectar datos donde las condiciones ya estaban dadas (encuestas, datos históricos, registros administrativos). Allí solo se observa, no se manipula."
+  },
+  {
+    "objectID": "index.html#tampoco-es-un-experimento",
+    "href": "index.html#tampoco-es-un-experimento",
+    "title": "Diseño de Experimentos",
+    "section": "Tampoco es un experimento",
+    "text": "Tampoco es un experimento\nUn “ensayo y error” sin estructura: cambiar cosas sin un diseño que permita aislar efectos y descartar explicaciones alternativas."
+  },
+  {
+    "objectID": "index.html#experimentar-vs.-observar",
+    "href": "index.html#experimentar-vs.-observar",
+    "title": "Diseño de Experimentos",
+    "section": "Experimentar vs. observar",
+    "text": "Experimentar vs. observar\n\nCorrelación no es causalidad.\nExperimentar es manipular a propósito, no solo mirar."
+  },
+  {
+    "objectID": "index.html#objetivos-del-doe",
+    "href": "index.html#objetivos-del-doe",
+    "title": "Diseño de Experimentos",
+    "section": "Objetivos del DOE",
+    "text": "Objetivos del DOE\n\nCribado | Identificar qué factores realmente influyen en el resultado y descartar los que no.\nOptimización | Encontrar la combinación de factores que lleva la respuesta al valor deseado.\nRobustez | Lograr estabilidad en el sistema ante variaciones que no se pueden controlar."
+  },
+  {
+    "objectID": "index.html#características-de-la-variable-de-respuesta",
+    "href": "index.html#características-de-la-variable-de-respuesta",
+    "title": "Diseño de Experimentos",
+    "section": "Características de la variable de respuesta",
+    "text": "Características de la variable de respuesta\n\nSe observa y mide, no se manipula\nRefleja el efecto combinado de factores controlados y variables extrañas\nDebe ser cuantificable de forma objetiva y repetible\nSu variabilidad es la que se busca explicar estadísticamente\nPuede haber una o varias variables de respuesta en un mismo experimento"
+  },
+  {
+    "objectID": "index.html#características-del-factor-de-diseño",
+    "href": "index.html#características-del-factor-de-diseño",
+    "title": "Diseño de Experimentos",
+    "section": "Características del factor de diseño",
+    "text": "Características del factor de diseño\n\nSon fijados deliberadamente por el experimentador, no ocurren al azar\nSe establecen en niveles o tratamientos definidos\nSe presume una relación de causa-efecto sobre la respuesta\nPueden ser cuantitativos o cualitativos\nSu número y niveles determinan el diseño experimental a usar"
+  },
+  {
+    "objectID": "index.html#réplica",
+    "href": "index.html#réplica",
+    "title": "Diseño de Experimentos",
+    "section": "Réplica",
+    "text": "Réplica\nRepetición independiente de una prueba o corrida experimental completa bajo las mismas combinaciones de factores. Permite estimar el error experimental y mejorar la precisión de los efectos."
+  },
+  {
+    "objectID": "index.html#pilares-del-doe",
+    "href": "index.html#pilares-del-doe",
+    "title": "Diseño de Experimentos",
+    "section": "Pilares del DOE",
+    "text": "Pilares del DOE\n\nAleatorización | Valida la inferencia estadística neutralizando el efecto de variables extrañas no controladas (asigna tratamientos al azar).\nReplicación | Permite estimar la varianza del error experimental y discriminar si el efecto es señal o puro ruido.\nBloqueo | Aisla la variabilidad conocida pero no de interés (lotes de material, turnos de trabajo, operadores)."
+  },
+  {
+    "objectID": "index.html#caso-1-mezcla-de-concreto",
+    "href": "index.html#caso-1-mezcla-de-concreto",
+    "title": "Diseño de Experimentos",
+    "section": "Caso 1: Mezcla de concreto",
+    "text": "Caso 1: Mezcla de concreto\nSe busca una mezcla de concreto que maximice la resistencia a la compresión y minimice el costo, variando tres factores:\n\nRelación agua/cemento\nDosis de aditivo superplastificante\nTiempo de curado"
+  },
+  {
+    "objectID": "index.html#el-problema-del-enfoque-tradicional-ofat",
+    "href": "index.html#el-problema-del-enfoque-tradicional-ofat",
+    "title": "Diseño de Experimentos",
+    "section": "El problema del enfoque tradicional (OFAT)",
+    "text": "El problema del enfoque tradicional (OFAT)\nEl enfoque tradicional de un factor a la vez (One Factor at a Time) paraliza el análisis:\n\nVaría un solo factor mientras mantiene los demás congelados en valores arbitrarios.\nIncapacidad de detectar interacciones: Asume erróneamente que el efecto del aditivo no cambia según el tiempo de curado.\nRequiere más pruebas totales y ofrece menor cobertura del espacio de diseño.\nCorre el riesgo de concluir en óptimos falsos."
+  },
+  {
+    "objectID": "index.html#cómo-se-debió-diseñar",
+    "href": "index.html#cómo-se-debió-diseñar",
+    "title": "Diseño de Experimentos",
+    "section": "Cómo se debió diseñar",
+    "text": "Cómo se debió diseñar\n\nCorrer un diseño factorial, no ajustar un factor a la vez: probar combinaciones de los tres factores (agua/cemento, aditivo, tiempo de curado) a la vez.\nUsar solo 2 niveles por factor (alto/bajo), bastan 8 combinaciones para cubrir todos los cruces posibles, muchas menos corridas de las que parece.\nReplicar cada combinación, por ejemplo, 3 probetas para distinguir efecto real de variación propia del concreto.\nAnalizar los resultados buscando explícitamente interacción aditivo-curado, no solo el efecto de cada factor por separado."
+  },
+  {
+    "objectID": "index.html#caso-2-accidente-del-transbordador-challenger",
+    "href": "index.html#caso-2-accidente-del-transbordador-challenger",
+    "title": "Diseño de Experimentos",
+    "section": "Caso 2: Accidente del Transbordador Challenger",
+    "text": "Caso 2: Accidente del Transbordador Challenger"
+  },
+  {
+    "objectID": "index.html#un-análisis-observacional-no-bastó",
+    "href": "index.html#un-análisis-observacional-no-bastó",
+    "title": "Diseño de Experimentos",
+    "section": "Un análisis observacional no bastó",
+    "text": "Un análisis observacional no bastó\nCorregir el sesgo en los datos históricos habría mostrado la correlación, pero seguía siendo inferida, no probada. Pocos vuelos a baja temperatura, sin manipulación deliberada, sin réplicas.\nPara saberlo con certeza, faltaba experimentar."
+  },
+  {
+    "objectID": "index.html#lo-que-nunca-se-hizo",
+    "href": "index.html#lo-que-nunca-se-hizo",
+    "title": "Diseño de Experimentos",
+    "section": "Lo que nunca se hizo",
+    "text": "Lo que nunca se hizo\n\nNo se probó el O-ring en laboratorio bajo distintas temperaturas antes del lanzamiento.\nSe confió en el historial de vuelos, no en datos generados de forma controlada.\nLa advertencia de los ingenieros no tenía respaldo experimental que la hiciera contundente."
+  },
+  {
+    "objectID": "index.html#cómo-se-debió-experimentar",
+    "href": "index.html#cómo-se-debió-experimentar",
+    "title": "Diseño de Experimentos",
+    "section": "Cómo se debió experimentar",
+    "text": "Cómo se debió experimentar\n\nProbar el material del O-ring en laboratorio, manipulando la temperatura en niveles controlados.\nReplicar cada condición, para distinguir falla real de variación del material.\nMedir la resiliencia del sello bajo cada temperatura antes de decidir si era seguro lanzar."
+  },
+  {
+    "objectID": "index.html#lección-doe-del-caso-challenger",
+    "href": "index.html#lección-doe-del-caso-challenger",
+    "title": "Diseño de Experimentos",
+    "section": "Lección DoE del caso Challenger",
+    "text": "Lección DoE del caso Challenger\nEl caso Challenger es el ejemplo histórico definitivo de cómo la presencia de variables de confusión no aisladas (la temperatura ambiental actuando sobre la rigidez del elastómero) y la ausencia de replicación experimental controlada pueden derivar en decisiones fatales basadas en datos puramente observacionales."
+  },
+  {
+    "objectID": "index.html#taxonomía-de-variables-1",
+    "href": "index.html#taxonomía-de-variables-1",
+    "title": "Diseño de Experimentos",
+    "section": "Taxonomía de variables",
+    "text": "Taxonomía de variables\nTodo experimento involucra más que el factor de interés: hay otras variables en juego.\n\nVariables fundamentales: el factor de diseño y la variable de respuesta; el “qué se manipula” y el “qué se mide”.\nVariables de riesgo: extrañas, de confusión, moderadoras e intervinientes; suelen confundirse entre sí."
+  },
+  {
+    "objectID": "index.html#taxonomía-variables-de-ruido-e-interferencia",
+    "href": "index.html#taxonomía-variables-de-ruido-e-interferencia",
+    "title": "Diseño de Experimentos",
+    "section": "Taxonomía: Variables de ruido e interferencia",
+    "text": "Taxonomía: Variables de ruido e interferencia\n\n\n\n\n\n\n\n\nDimensión\nVariable extraña\nVariable de confusión\n\n\n\n\n¿Qué es?\nRuido ambiental o de proceso no deseado.\nVariable extraña que cambia sistemáticamente junto al factor principal.\n\n\nEfecto\nAumenta el error experimental (dificulta ver la señal).\nDistorsiona el efecto real; simula o enmascara la causa verdadera.\n\n\nSolución DoE\nAleatorización y Bloqueo.\nDiseño factorial y control de condiciones previas.\n\n\n\nCaso del Challenger: La temperatura operó como variable de confusión al no aislarse mediante pruebas experimentales previas."
+  },
+  {
+    "objectID": "index.html#taxonomía-variables-de-mecanismo-e-interacción",
+    "href": "index.html#taxonomía-variables-de-mecanismo-e-interacción",
+    "title": "Diseño de Experimentos",
+    "section": "Taxonomía: Variables de mecanismo e Interacción",
+    "text": "Taxonomía: Variables de mecanismo e Interacción\n\n\n\n\n\n\n\n\nDimensión\nVariable moderadora (Interacción)\nVariable interviniente (Mediadora)\n\n\n\n\n¿Qué es?\nVariable controlada que altera la fuerza/dirección del factor principal.\nProceso interno o mecanismo no medible directamente.\n\n\nEfecto\nEl impacto del Factor A depende del nivel del Factor B.\nExplica el porqué físico/químico del resultado.\n\n\nSolución DoE\nIncluirla formalmente como factor en un diseño factorial.\nModulación teórica o análisis de mediación posterior.\n\n\n\nCaso del Concreto: En el concreto, la dosis de aditivo moderó el tiempo de curado requerido para alcanzar la resistencia."
+  },
+  {
+    "objectID": "index.html#planificación-y-estrategia-de-experimentación-1",
+    "href": "index.html#planificación-y-estrategia-de-experimentación-1",
+    "title": "Diseño de Experimentos",
+    "section": "Planificación y estrategia de experimentación",
+    "text": "Planificación y estrategia de experimentación\nEl éxito de un experimento se decide antes de tomar la primera medición. Un diseño estadístico robusto previene el desperdicio de recursos y garantiza la validez de los resultados.\n\nReconocimiento del problema | Definir con claridad el objetivo y la pregunta de investigación.\nElección de la variable de respuesta | Garantizar que sea cuantitativa, precisa y objetiva.\nSelección de factores y niveles | Definir qué variables se manipularán y en qué rangos operarán.\nDeterminación del tamaño de muestra | Calcular el número de réplicas necesarias para alcanzar la potencia estadística deseada."
+  },
+  {
+    "objectID": "index.html#objetivos-vs.-etapas-no-es-lo-mismo",
+    "href": "index.html#objetivos-vs.-etapas-no-es-lo-mismo",
+    "title": "Diseño de Experimentos",
+    "section": "Objetivos vs. etapas (no es lo mismo)",
+    "text": "Objetivos vs. etapas (no es lo mismo)\n\nLos objetivos (Cribado, Optimización, Robustez) responden a para qué se experimenta.\nLas etapas (Cribado → Caracterización → Optimización) responden a cómo se organiza un programa experimental en el tiempo.\n\nAmbos comparten Cribado y Optimización porque son, a la vez, un objetivo y una fase del proceso.\nLa Robustez no es una fase aparte: se persigue dentro de la etapa de Optimización, ajustando el sistema para que sea estable ante variaciones no controladas."
+  },
+  {
+    "objectID": "index.html#características-del-cribado",
+    "href": "index.html#características-del-cribado",
+    "title": "Diseño de Experimentos",
+    "section": "Características del cribado",
+    "text": "Características del cribado\n\nTrabaja con una lista amplia de factores candidatos\nUsa diseños económicos (pocas corridas por factor evaluado)\nPrioriza detectar efectos grandes, no medir con precisión\nSu resultado es una lista reducida de factores relevantes\nAntecede siempre a la Caracterización y la Optimización"
+  },
+  {
+    "objectID": "index.html#caso-de-estudio-cribado",
+    "href": "index.html#caso-de-estudio-cribado",
+    "title": "Diseño de Experimentos",
+    "section": "Caso de estudio: Cribado",
+    "text": "Caso de estudio: Cribado\nUna empresa constructora busca reducir el tiempo de asentamiento diferencial en las cimentaciones de un edificio. Un ingeniero geotécnico identifica 7 factores candidatos: profundidad de la cimentación, tipo de suelo compactado, método de compactación, contenido de humedad del relleno, espaciamiento entre pilotes, diámetro de pilote y tiempo de precarga.\n¿Es razonable investigar los 7 factores a fondo desde el inicio? ¿Qué haría primero, y por qué?"
+  },
+  {
+    "objectID": "index.html#qué-responde-el-cribado",
+    "href": "index.html#qué-responde-el-cribado",
+    "title": "Diseño de Experimentos",
+    "section": "Qué responde el cribado",
+    "text": "Qué responde el cribado\nNo busca modelar con precisión cómo cada factor afecta el asentamiento, busca responder una pregunta más simple y económica: ¿este factor importa o no? Los que sí importan pasan a Caracterización; los que no, se descartan."
+  },
+  {
+    "objectID": "index.html#características-de-la-caracterización",
+    "href": "index.html#características-de-la-caracterización",
+    "title": "Diseño de Experimentos",
+    "section": "Características de la caracterización",
+    "text": "Características de la caracterización\n\nTrabaja con la lista reducida de factores tras el cribado\nEstudia interacciones entre factores, no solo efectos individuales\nUsa diseños factoriales completos, más corridas que el cribado\nBusca entender la relación factor-respuesta, no solo detectarla\nAntecede a la optimización, una vez comprendido el sistema"
+  },
+  {
+    "objectID": "index.html#caso-de-estudio-caracterización",
+    "href": "index.html#caso-de-estudio-caracterización",
+    "title": "Diseño de Experimentos",
+    "section": "Caso de estudio: Caracterización",
+    "text": "Caso de estudio: Caracterización\nTras el cribado del caso anterior, el ingeniero geotécnico determinó que solo 3 de los 7 factores afectan significativamente el asentamiento: espaciamiento entre pilotes, diámetro de pilote y tiempo de precarga. Ahora corre un diseño factorial completo con estos 3 factores.\n¿Qué gana el ingeniero al pasar de cribado a un factorial completo? ¿Por qué no bastaba con saber que estos 3 factores “importan”?"
+  },
+  {
+    "objectID": "index.html#qué-responde-la-caracterización",
+    "href": "index.html#qué-responde-la-caracterización",
+    "title": "Diseño de Experimentos",
+    "section": "Qué responde la caracterización",
+    "text": "Qué responde la caracterización\nCribado dijo cuáles factores importan. Caracterización responde cómo interactúan entre sí: ¿el efecto del espaciamiento entre pilotes cambia según el diámetro usado? Sin esto, no se sabe si conviene ajustar los factores juntos o por separado."
+  },
+  {
+    "objectID": "index.html#características-de-la-optimización",
+    "href": "index.html#características-de-la-optimización",
+    "title": "Diseño de Experimentos",
+    "section": "Características de la optimización",
+    "text": "Características de la optimización\n\nTrabaja con los factores ya comprendidos en la caracterización\nAjusta niveles con precisión, no solo alto/bajo\nSuele requerir modelos cuadráticos para capturar curvatura\nBusca el punto óptimo, no solo un mejor tratamiento entre pocos\nEs la etapa final del ciclo Cribado → Caracterización → Optimización"
+  },
+  {
+    "objectID": "index.html#caso-de-estudio-optimización",
+    "href": "index.html#caso-de-estudio-optimización",
+    "title": "Diseño de Experimentos",
+    "section": "Caso de estudio: Optimización",
+    "text": "Caso de estudio: Optimización\nCon las interacciones ya comprendidas, el ingeniero busca ahora la combinación exacta de espaciamiento, diámetro y tiempo de precarga que minimiza el asentamiento diferencial, dentro de las restricciones de costo del proyecto.\n¿Por qué esta etapa no se pudo abordar directamente desde el cribado, sin pasar por caracterización?"
+  },
+  {
+    "objectID": "index.html#qué-responde-la-optimización",
+    "href": "index.html#qué-responde-la-optimización",
+    "title": "Diseño de Experimentos",
+    "section": "Qué responde la optimización",
+    "text": "Qué responde la optimización\nNo basta con saber que los factores interactúan — hay que encontrar el punto exacto de operación. Aquí se ajustan niveles con precisión (no solo alto/bajo) para llevar el asentamiento a su valor mínimo posible."
+  },
+  {
+    "objectID": "index.html#etapas-del-ciclo-de-experimentación",
+    "href": "index.html#etapas-del-ciclo-de-experimentación",
+    "title": "Diseño de Experimentos",
+    "section": "Etapas del ciclo de experimentación",
+    "text": "Etapas del ciclo de experimentación\nEl proceso experimental es una estrategia iterativa de aprendizaje continuo, estructurada en tres fases principales:\n\n\n1. Cribado\n(Screening)\n\n\n→\n\n\n2. Caracterización\n(Mapeo de interacciones)\n\n\n→\n\n\n3. Optimización\n(Superficie de respuesta)\n\n\n\nFase de Cribado | Descartar variables irrelevantes y reducir una lista amplia de factores a solo aquellos con impacto significativo.\nFase de Caracterización | Evaluar interacciones principales y comportamientos lineales entre los factores seleccionados.\nFase de Optimización | Encontrar el punto de operación ideal ajustando curvaturas y modelos cuadráticos (Superficie de Respuesta)."
+  },
+  {
+    "objectID": "index.html#introducción-al-software-estadístico-python-y-r",
+    "href": "index.html#introducción-al-software-estadístico-python-y-r",
+    "title": "Diseño de Experimentos",
+    "section": "Introducción al software estadístico: Python y R",
+    "text": "Introducción al software estadístico: Python y R\nLa implementación moderna del Diseño de Experimentos requiere herramientas computacionales para generar matrices experimentales, automatizar la aleatorización y ajustar modelos estadísticos.\n\nPython: Lenguaje multipropósito flexible. Ideal para integrar el DoE con modelos de aprendizaje automático (Machine Learning), optimización y flujos de trabajo computacionales.\nR: Entorno diseñado específicamente para el análisis estadístico y la investigación empírica. Cuenta con el soporte más maduro en paquetes especializados para DoE.\n\nAmbos lenguajes son de código abierto y permiten garantizar la reproducibilidad científica de los experimentos."
+  }
+]
