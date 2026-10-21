@@ -521,265 +521,215 @@ Objetivo: Convertir el distractor en instrumento de medición y evidenciar el er
 <div style="border-left: 2px solid #888; padding-left: 15px; line-height: 1.8; margin-top: 20px;">
 <p>La respuesta debe señalar más de una posible variable de confusión y una acción concreta para reducir el problema.</p>
 </div>
-</section></section>
-<section>
-<section id="control-y-aseguramiento-de-la-calidad" class="title-slide slide level1 center">
-<h1>2. Control y aseguramiento de la calidad</h1>
+<!--
+# 2. Control y aseguramiento de la calidad
 
-</section>
-<section id="calidad-de-los-datos-dos-preguntas-distintas" class="slide level2 center">
-<h2>Calidad de los datos: dos preguntas distintas</h2>
-<ul>
-<li><strong>Control de calidad (QC):</strong> ¿los datos y resultados obtenidos cumplen los criterios definidos?</li>
-<li><strong>Aseguramiento de la calidad (QA):</strong> ¿el sistema de trabajo está diseñado y documentado para producir datos confiables de manera consistente?</li>
-</ul>
-<p>QC detecta y gestiona problemas en mediciones o resultados. QA establece procedimientos, responsabilidades, formación y trazabilidad para prevenirlos.</p>
-<aside class="notes">
-<p>En laboratorios acreditados, ISO/IEC 17025:2017 agrupa muchas de estas actividades bajo “aseguramiento de la validez de los resultados” (cláusula 7.7). Los términos QA/QC se usan con matices según la norma o el sector.</p>
-<style type="text/css">
-        span.MJX_Assistive_MathML {
-          position:absolute!important;
-          clip: rect(1px, 1px, 1px, 1px);
-          padding: 1px 0 0 0!important;
-          border: 0!important;
-          height: 1px!important;
-          width: 1px!important;
-          overflow: hidden!important;
-          display:block!important;
-      }</style></aside>
-</section>
-<section id="qa-y-qc-comparación" class="slide level2 center">
-<h2>QA y QC: comparación</h2>
-<table class="caption-top">
-<colgroup>
-<col style="width: 33%">
-<col style="width: 33%">
-<col style="width: 33%">
-</colgroup>
-<thead>
-<tr class="header">
-<th>Aspecto</th>
-<th>Aseguramiento de la calidad (QA)</th>
-<th>Control de calidad (QC)</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Enfoque</td>
-<td>Prevención y sistema</td>
-<td>Verificación del resultado</td>
-</tr>
-<tr class="even">
-<td>Momento</td>
-<td>Antes y durante todo el proceso</td>
-<td>Durante y después de medir</td>
-</tr>
-<tr class="odd">
-<td>Ejemplos</td>
-<td>Procedimiento documentado, capacitación, auditoría</td>
-<td>Patrón de control, duplicados, revisión de resultados</td>
-</tr>
-<tr class="even">
-<td>Pregunta</td>
-<td>¿El proceso está preparado para producir datos fiables?</td>
-<td>¿Este resultado cumple los criterios?</td>
-</tr>
-</tbody>
-</table>
-<p>No son actividades opuestas: se complementan.</p>
-</section>
-<section id="aseguramiento-de-la-calidad-antes-del-ensayo" class="slide level2 center">
-<h2>Aseguramiento de la calidad: antes del ensayo</h2>
-<p>Un plan QA puede incluir:</p>
-<ul>
-<li>Procedimiento escrito y versión vigente.</li>
-<li>Definición de variables, unidades y criterios de aceptación.</li>
-<li>Competencia y capacitación de operadores.</li>
-<li>Identificación y trazabilidad de muestras.</li>
-<li>Equipos adecuados y estado de calibración conocido.</li>
-<li>Condiciones ambientales y de preparación especificadas.</li>
-<li>Plan de muestreo, réplicas y aleatorización.</li>
-<li>Gestión de cambios, desviaciones y datos originales.</li>
-</ul>
-<p>El objetivo es evitar que dos personas ejecuten procedimientos distintos creyendo que hacen lo mismo.</p>
-</section>
-<section id="control-de-calidad-durante-y-después" class="slide level2 center">
-<h2>Control de calidad: durante y después</h2>
-<p>Verificaciones típicas:</p>
-<ul>
-<li>Comprobar identificación, unidades y rangos plausibles.</li>
-<li>Revisar el cero, la estabilidad y el funcionamiento del instrumento.</li>
-<li>Medir patrones o materiales de referencia cuando proceda.</li>
-<li>Comparar duplicados y réplicas contra los criterios de aceptabilidad del método.</li>
-<li>Revisar valores faltantes, transcripciones y errores de cálculo.</li>
-<li>Examinar gráficos de control cuando existan datos de seguimiento suficientes.</li>
-<li>Documentar resultados fuera de criterio y su resolución.</li>
-</ul>
-<p><strong>Importante:</strong> un dato inusual no se elimina automáticamente. Primero se investiga y se documenta.</p>
-</section>
-<section id="calibración-verificación-y-ajuste" class="slide level2 center">
-<h2>Calibración, verificación y ajuste</h2>
-<ul>
-<li><strong>Calibración:</strong> establece la relación entre las indicaciones del instrumento y valores de referencia, junto con la incertidumbre correspondiente.</li>
-<li><strong>Verificación:</strong> aporta evidencia objetiva de que se cumplen requisitos especificados.</li>
-<li><strong>Ajuste:</strong> intervención para modificar el instrumento cuando su comportamiento no cumple lo requerido.</li>
-</ul>
-<p>Calibrar no significa necesariamente ajustar. Tampoco basta con que una etiqueta diga “calibrado”: hay que revisar vigencia, rango, trazabilidad y adecuación a la medición.</p>
-</section>
-<section id="trazabilidad-de-muestras-y-datos" class="slide level2 center">
-<h2>Trazabilidad de muestras y datos</h2>
-<p>Cada resultado debe poder vincularse con:</p>
-<ul>
-<li>La muestra o unidad experimental.</li>
-<li>El tratamiento aplicado.</li>
-<li>La fecha, el operador y el equipo.</li>
-<li>El procedimiento y su versión.</li>
-<li>El archivo original y las transformaciones realizadas.</li>
-<li>Las incidencias y decisiones tomadas.</li>
-</ul>
-<p>Un código único por muestra reduce errores de transcripción y mezclas de registros.</p>
-<p><strong>Buena práctica:</strong> conservar los datos originales sin sobrescribirlos y realizar las correcciones en una copia documentada o mediante un registro de cambios.</p>
-<p><strong>No confundir</strong> con la trazabilidad metrológica: cadena documentada de calibraciones que vincula el instrumento con patrones nacionales o internacionales.</p>
-</section>
-<section id="aleatorización-y-bloqueo-también-protegen-la-calidad" class="slide level2 center">
-<h2>Aleatorización y bloqueo también protegen la calidad</h2>
-<p><strong>Aleatorización:</strong> evita que factores no controlados (calentamiento del equipo, fatiga del operador, cambios ambientales) se asocien sistemáticamente con un tratamiento. Debe hacerse con un procedimiento reproducible y registrarse el orden resultante.</p>
-<p><strong>Bloqueo:</strong> agrupa unidades similares para controlar una fuente conocida de variabilidad, como lote, día, operador o ubicación.</p>
-<p><strong>Criterio práctico:</strong> bloquear lo que se puede identificar y aleatorizar lo que no (Box, Hunter y Hunter).</p>
-<p><strong>Ejemplo:</strong> si se fabrican mezclas en tres días, cada día debe contener todos los tratamientos, en orden aleatorio, en lugar de fabricar todos los controles el primer día y todos los modificados el último.</p>
-</section>
-<section id="qué-hacer-ante-una-desviación" class="slide level2 center">
-<h2>¿Qué hacer ante una desviación?</h2>
-<p>Ejemplo: una probeta se rompe durante la manipulación antes de realizar el ensayo.</p>
-<ol type="1">
-<li>Registrar el evento y la identificación de la probeta.</li>
-<li>Determinar si el procedimiento permite reemplazarla: solo con otra probeta de la misma amasada; de lo contrario es un dato faltante.</li>
-<li>No cambiar retrospectivamente las reglas para favorecer un resultado.</li>
-<li>Documentar el reemplazo y conservar el registro de la unidad perdida.</li>
-<li>Evaluar si la desviación afecta el diseño, el balance o la interpretación.</li>
-</ol>
-<p>La decisión debe seguir criterios definidos previamente y no depender de si el resultado favorece la hipótesis.</p>
-</section>
-<section id="actividad-breve-2-qa-o-qc" class="slide level2 center">
-<h2>Actividad breve 2 · QA o QC</h2>
-<p><strong>Tiempo: 5 minutos</strong></p>
-<p>Clasifiquen cada acción como QA, QC o ambas, y justifiquen:</p>
-<ol type="1">
-<li>Capacitar a los operadores antes de iniciar la campaña.</li>
-<li>Revisar un patrón de control al comienzo de cada jornada.</li>
-<li>Aprobar una versión única del procedimiento de ensayo.</li>
-<li>Investigar una lectura fuera del rango plausible.</li>
-<li>Auditar si las muestras tienen identificación trazable.</li>
-</ol>
-<p>No todas las acciones encajan de forma absoluta en una sola categoría; importa explicar su propósito principal.</p>
-<aside class="notes">
-<p>Clave orientativa: 1 QA; 2 QC; 3 QA; 4 QC; 5 QA (verifica el sistema, aunque se apoya en una revisión de resultados). Aceptar clasificaciones distintas si el estudiante justifica el propósito.</p>
-<style type="text/css">
-        span.MJX_Assistive_MathML {
-          position:absolute!important;
-          clip: rect(1px, 1px, 1px, 1px);
-          padding: 1px 0 0 0!important;
-          border: 0!important;
-          height: 1px!important;
-          width: 1px!important;
-          overflow: hidden!important;
-          display:block!important;
-      }</style></aside>
-</section></section>
-<section>
-<section id="análisis-de-errores-y-métricas-de-calidad" class="title-slide slide level1 center">
-<h1>3. Análisis de errores y métricas de calidad</h1>
+## Calidad de los datos: dos preguntas distintas
 
-</section>
-<section id="qué-significa-error-de-medición" class="slide level2 center">
-<h2>¿Qué significa error de medición?</h2>
-<p>El error de medición es la diferencia entre un valor medido y un valor de referencia:</p>
-<p><span class="math display">\[
+- **Control de calidad (QC):** ¿los datos y resultados obtenidos cumplen los criterios definidos?
+- **Aseguramiento de la calidad (QA):** ¿el sistema de trabajo está diseñado y documentado para producir datos confiables de manera consistente?
+
+QC detecta y gestiona problemas en mediciones o resultados. QA establece procedimientos, responsabilidades, formación y trazabilidad para prevenirlos.
+
+::: {.notes}
+En laboratorios acreditados, ISO/IEC 17025:2017 agrupa muchas de estas actividades bajo "aseguramiento de la validez de los resultados" (cláusula 7.7). Los términos QA/QC se usan con matices según la norma o el sector.
+:::
+
+## QA y QC: comparación
+
+| Aspecto | Aseguramiento de la calidad (QA) | Control de calidad (QC) |
+|---|---|---|
+| Enfoque | Prevención y sistema | Verificación del resultado |
+| Momento | Antes y durante todo el proceso | Durante y después de medir |
+| Ejemplos | Procedimiento documentado, capacitación, auditoría | Patrón de control, duplicados, revisión de resultados |
+| Pregunta | ¿El proceso está preparado para producir datos fiables? | ¿Este resultado cumple los criterios? |
+
+No son actividades opuestas: se complementan.
+
+## Aseguramiento de la calidad: antes del ensayo
+
+Un plan QA puede incluir:
+
+- Procedimiento escrito y versión vigente.
+- Definición de variables, unidades y criterios de aceptación.
+- Competencia y capacitación de operadores.
+- Identificación y trazabilidad de muestras.
+- Equipos adecuados y estado de calibración conocido.
+- Condiciones ambientales y de preparación especificadas.
+- Plan de muestreo, réplicas y aleatorización.
+- Gestión de cambios, desviaciones y datos originales.
+
+El objetivo es evitar que dos personas ejecuten procedimientos distintos creyendo que hacen lo mismo.
+
+## Control de calidad: durante y después
+
+Verificaciones típicas:
+
+- Comprobar identificación, unidades y rangos plausibles.
+- Revisar el cero, la estabilidad y el funcionamiento del instrumento.
+- Medir patrones o materiales de referencia cuando proceda.
+- Comparar duplicados y réplicas contra los criterios de aceptabilidad del método.
+- Revisar valores faltantes, transcripciones y errores de cálculo.
+- Examinar gráficos de control cuando existan datos de seguimiento suficientes.
+- Documentar resultados fuera de criterio y su resolución.
+
+**Importante:** un dato inusual no se elimina automáticamente. Primero se investiga y se documenta.
+
+## Calibración, verificación y ajuste
+
+- **Calibración:** establece la relación entre las indicaciones del instrumento y valores de referencia, junto con la incertidumbre correspondiente.
+- **Verificación:** aporta evidencia objetiva de que se cumplen requisitos especificados.
+- **Ajuste:** intervención para modificar el instrumento cuando su comportamiento no cumple lo requerido.
+
+Calibrar no significa necesariamente ajustar. Tampoco basta con que una etiqueta diga "calibrado": hay que revisar vigencia, rango, trazabilidad y adecuación a la medición.
+
+## Trazabilidad de muestras y datos
+
+Cada resultado debe poder vincularse con:
+
+- La muestra o unidad experimental.
+- El tratamiento aplicado.
+- La fecha, el operador y el equipo.
+- El procedimiento y su versión.
+- El archivo original y las transformaciones realizadas.
+- Las incidencias y decisiones tomadas.
+
+Un código único por muestra reduce errores de transcripción y mezclas de registros.
+
+**Buena práctica:** conservar los datos originales sin sobrescribirlos y realizar las correcciones en una copia documentada o mediante un registro de cambios.
+
+**No confundir** con la trazabilidad metrológica: cadena documentada de calibraciones que vincula el instrumento con patrones nacionales o internacionales.
+
+## Aleatorización y bloqueo también protegen la calidad
+
+**Aleatorización:** evita que factores no controlados (calentamiento del equipo, fatiga del operador, cambios ambientales) se asocien sistemáticamente con un tratamiento. Debe hacerse con un procedimiento reproducible y registrarse el orden resultante.
+
+**Bloqueo:** agrupa unidades similares para controlar una fuente conocida de variabilidad, como lote, día, operador o ubicación.
+
+**Criterio práctico:** bloquear lo que se puede identificar y aleatorizar lo que no (Box, Hunter y Hunter).
+
+**Ejemplo:** si se fabrican mezclas en tres días, cada día debe contener todos los tratamientos, en orden aleatorio, en lugar de fabricar todos los controles el primer día y todos los modificados el último.
+
+## ¿Qué hacer ante una desviación?
+
+Ejemplo: una probeta se rompe durante la manipulación antes de realizar el ensayo.
+
+1. Registrar el evento y la identificación de la probeta.
+2. Determinar si el procedimiento permite reemplazarla: solo con otra probeta de la misma amasada; de lo contrario es un dato faltante.
+3. No cambiar retrospectivamente las reglas para favorecer un resultado.
+4. Documentar el reemplazo y conservar el registro de la unidad perdida.
+5. Evaluar si la desviación afecta el diseño, el balance o la interpretación.
+
+La decisión debe seguir criterios definidos previamente y no depender de si el resultado favorece la hipótesis.
+
+## Actividad breve 2 · QA o QC
+
+**Tiempo: 5 minutos**
+
+Clasifiquen cada acción como QA, QC o ambas, y justifiquen:
+
+1. Capacitar a los operadores antes de iniciar la campaña.
+2. Revisar un patrón de control al comienzo de cada jornada.
+3. Aprobar una versión única del procedimiento de ensayo.
+4. Investigar una lectura fuera del rango plausible.
+5. Auditar si las muestras tienen identificación trazable.
+
+No todas las acciones encajan de forma absoluta en una sola categoría; importa explicar su propósito principal.
+
+::: {.notes}
+Clave orientativa: 1 QA; 2 QC; 3 QA; 4 QC; 5 QA (verifica el sistema, aunque se apoya en una revisión de resultados). Aceptar clasificaciones distintas si el estudiante justifica el propósito.
+:::
+
+# 3. Análisis de errores y métricas de calidad
+
+## ¿Qué significa error de medición?
+
+El error de medición es la diferencia entre un valor medido y un valor de referencia:
+
+$$
 \Delta_i = y_i-y_{\mathrm{ref}}
-\]</span></p>
-<p>donde <span class="math inline">\(y_i\)</span> es el valor medido y <span class="math inline">\(y_{\mathrm{ref}}\)</span> el valor de referencia.</p>
-<p>En la práctica, el valor verdadero suele ser desconocido. Se utiliza un valor de referencia apropiado, que también puede tener incertidumbre.</p>
-<p><strong>No confundir:</strong> error de medición, variabilidad entre unidades experimentales y residuo de un modelo estadístico son conceptos relacionados, pero diferentes.</p>
-</section>
-<section id="tres-fuentes-de-error" class="slide level2 center">
-<h2>Tres fuentes de error</h2>
-<div class="columns">
-<div class="column" style="width:33%;">
-<p><strong>Aleatorio</strong></p>
-<p>Variación impredecible entre mediciones.</p>
-<p>Ejemplos: pequeñas fluctuaciones ambientales o de lectura.</p>
-<p>Efecto: aumenta la dispersión; se reduce promediando.</p>
-</div><div class="column" style="width:33%;">
-<p><strong>Sistemático</strong></p>
-<p>Desviación persistente en una dirección.</p>
-<p>Ejemplos: instrumento desajustado o método sesgado.</p>
-<p>Efecto: desplaza resultados; no se reduce con más réplicas.</p>
-</div><div class="column" style="width:33%;">
-<p><strong>Grosero</strong></p>
-<p>Equivocación o incidente evidente.</p>
-<p>Ejemplos: unidad incorrecta, muestra intercambiada o transcripción errónea.</p>
-<p>Efecto: valores incompatibles con el proceso; se detecta y corrige, no se modela.</p>
-</div></div>
-<p>Más réplicas reducen el error aleatorio de la media (≈ <span class="math inline">\(s/\sqrt{n}\)</span>), pero no eliminan el sesgo sistemático.</p>
-<aside class="notes">
-<p>Precisión terminológica: en el VIM el error de medición se descompone en componente sistemática y componente aleatoria. El “error grosero” es una categoría didáctica habitual (equivocación), no un componente del error.</p>
-<style type="text/css">
-        span.MJX_Assistive_MathML {
-          position:absolute!important;
-          clip: rect(1px, 1px, 1px, 1px);
-          padding: 1px 0 0 0!important;
-          border: 0!important;
-          height: 1px!important;
-          width: 1px!important;
-          overflow: hidden!important;
-          display:block!important;
-      }</style></aside>
-</section>
-<section id="exactitud-precisión-y-resolución" class="slide level2 center">
-<h2>Exactitud, precisión y resolución</h2>
-<ul>
-<li><strong>Exactitud:</strong> cercanía entre el resultado y un valor de referencia; refleja error sistemático y aleatorio.</li>
-<li><strong>Veracidad:</strong> cercanía entre la media de muchas mediciones y el valor de referencia; se asocia al sesgo.</li>
-<li><strong>Precisión:</strong> cercanía entre resultados repetidos bajo condiciones especificadas (repetibilidad, reproducibilidad).</li>
-<li><strong>Resolución:</strong> cambio más pequeño que el sistema de medición puede indicar o distinguir.</li>
-<li><strong>Incertidumbre:</strong> parámetro que caracteriza la dispersión de valores que pueden atribuirse razonablemente al mensurando. No es un error: cuantifica la duda sobre el resultado.</li>
-</ul>
-<p>Un equipo puede mostrar muchas cifras decimales sin ser exacto. La resolución de la pantalla no demuestra la calidad de la medición.</p>
-<aside class="notes">
-<p>La resolución <span class="math inline">\(\delta\)</span> aporta una componente de incertidumbre <span class="math inline">\(u=\delta/(2\sqrt{3})\)</span> (distribución rectangular). Terminología según VIM e ISO 5725; en inglés, “accuracy”, “trueness” y “precision”.</p>
-<style type="text/css">
-        span.MJX_Assistive_MathML {
-          position:absolute!important;
-          clip: rect(1px, 1px, 1px, 1px);
-          padding: 1px 0 0 0!important;
-          border: 0!important;
-          height: 1px!important;
-          width: 1px!important;
-          overflow: hidden!important;
-          display:block!important;
-      }</style></aside>
-</section>
-<section id="ejemplo-visual-cuatro-patrones" class="slide level2 center">
-<h2>Ejemplo visual: cuatro patrones</h2>
-<svg viewbox="0 0 800 225" style="width:100%;max-height:62vh" role="img" aria-label="Cuatro blancos con puntos: preciso y exacto, preciso con sesgo, impreciso sin sesgo e impreciso con sesgo">
+$$
+
+donde $y_i$ es el valor medido y $y_{\mathrm{ref}}$ el valor de referencia.
+
+En la práctica, el valor verdadero suele ser desconocido. Se utiliza un valor de referencia apropiado, que también puede tener incertidumbre.
+
+**No confundir:** error de medición, variabilidad entre unidades experimentales y residuo de un modelo estadístico son conceptos relacionados, pero diferentes.
+
+## Tres fuentes de error
+
+::: {.columns}
+::: {.column width="33%"}
+**Aleatorio**
+
+Variación impredecible entre mediciones.
+
+Ejemplos: pequeñas fluctuaciones ambientales o de lectura.
+
+Efecto: aumenta la dispersión; se reduce promediando.
+:::
+::: {.column width="33%"}
+**Sistemático**
+
+Desviación persistente en una dirección.
+
+Ejemplos: instrumento desajustado o método sesgado.
+
+Efecto: desplaza resultados; no se reduce con más réplicas.
+:::
+::: {.column width="33%"}
+**Grosero**
+
+Equivocación o incidente evidente.
+
+Ejemplos: unidad incorrecta, muestra intercambiada o transcripción errónea.
+
+Efecto: valores incompatibles con el proceso; se detecta y corrige, no se modela.
+:::
+:::
+
+Más réplicas reducen el error aleatorio de la media (≈ $s/\sqrt{n}$), pero no eliminan el sesgo sistemático.
+
+::: {.notes}
+Precisión terminológica: en el VIM el error de medición se descompone en componente sistemática y componente aleatoria. El "error grosero" es una categoría didáctica habitual (equivocación), no un componente del error.
+:::
+
+## Exactitud, precisión y resolución
+
+- **Exactitud:** cercanía entre el resultado y un valor de referencia; refleja error sistemático y aleatorio.
+- **Veracidad:** cercanía entre la media de muchas mediciones y el valor de referencia; se asocia al sesgo.
+- **Precisión:** cercanía entre resultados repetidos bajo condiciones especificadas (repetibilidad, reproducibilidad).
+- **Resolución:** cambio más pequeño que el sistema de medición puede indicar o distinguir.
+- **Incertidumbre:** parámetro que caracteriza la dispersión de valores que pueden atribuirse razonablemente al mensurando. No es un error: cuantifica la duda sobre el resultado.
+
+Un equipo puede mostrar muchas cifras decimales sin ser exacto. La resolución de la pantalla no demuestra la calidad de la medición.
+
+::: {.notes}
+La resolución $\delta$ aporta una componente de incertidumbre $u=\delta/(2\sqrt{3})$ (distribución rectangular). Terminología según VIM e ISO 5725; en inglés, "accuracy", "trueness" y "precision".
+:::
+
+## Ejemplo visual: cuatro patrones
+
+```{=html}
+<svg viewBox="0 0 800 225" style="width:100%;max-height:62vh" role="img" aria-label="Cuatro blancos con puntos: preciso y exacto, preciso con sesgo, impreciso sin sesgo e impreciso con sesgo">
   <defs>
     <g id="blanco" fill="none" stroke="currentColor" stroke-opacity="0.45">
-      <circle r="20"></circle><circle r="40"></circle><circle r="60"></circle><circle r="80"></circle>
+      <circle r="20"/><circle r="40"/><circle r="60"/><circle r="80"/>
     </g>
   </defs>
-  <use href="#blanco" x="100" y="100"></use>
-  <use href="#blanco" x="300" y="100"></use>
-  <use href="#blanco" x="500" y="100"></use>
-  <use href="#blanco" x="700" y="100"></use>
+  <use href="#blanco" x="100" y="100"/>
+  <use href="#blanco" x="300" y="100"/>
+  <use href="#blanco" x="500" y="100"/>
+  <use href="#blanco" x="700" y="100"/>
   <g fill="#d9480f">
-    <circle cx="94" cy="104" r="4.5"></circle><circle cx="105" cy="93" r="4.5"></circle><circle cx="108" cy="106" r="4.5"></circle>
-    <circle cx="91" cy="95" r="4.5"></circle><circle cx="102" cy="110" r="4.5"></circle><circle cx="97" cy="90" r="4.5"></circle>
-    <circle cx="332" cy="74" r="4.5"></circle><circle cx="343" cy="63" r="4.5"></circle><circle cx="346" cy="76" r="4.5"></circle>
-    <circle cx="329" cy="65" r="4.5"></circle><circle cx="340" cy="80" r="4.5"></circle><circle cx="335" cy="60" r="4.5"></circle>
-    <circle cx="455" cy="120" r="4.5"></circle><circle cx="545" cy="80" r="4.5"></circle><circle cx="530" cy="145" r="4.5"></circle>
-    <circle cx="470" cy="55" r="4.5"></circle><circle cx="550" cy="125" r="4.5"></circle><circle cx="450" cy="75" r="4.5"></circle>
-    <circle cx="635" cy="135" r="4.5"></circle><circle cx="725" cy="95" r="4.5"></circle><circle cx="710" cy="160" r="4.5"></circle>
-    <circle cx="650" cy="70" r="4.5"></circle><circle cx="730" cy="140" r="4.5"></circle><circle cx="630" cy="90" r="4.5"></circle>
+    <circle cx="94" cy="104" r="4.5"/><circle cx="105" cy="93" r="4.5"/><circle cx="108" cy="106" r="4.5"/>
+    <circle cx="91" cy="95" r="4.5"/><circle cx="102" cy="110" r="4.5"/><circle cx="97" cy="90" r="4.5"/>
+    <circle cx="332" cy="74" r="4.5"/><circle cx="343" cy="63" r="4.5"/><circle cx="346" cy="76" r="4.5"/>
+    <circle cx="329" cy="65" r="4.5"/><circle cx="340" cy="80" r="4.5"/><circle cx="335" cy="60" r="4.5"/>
+    <circle cx="455" cy="120" r="4.5"/><circle cx="545" cy="80" r="4.5"/><circle cx="530" cy="145" r="4.5"/>
+    <circle cx="470" cy="55" r="4.5"/><circle cx="550" cy="125" r="4.5"/><circle cx="450" cy="75" r="4.5"/>
+    <circle cx="635" cy="135" r="4.5"/><circle cx="725" cy="95" r="4.5"/><circle cx="710" cy="160" r="4.5"/>
+    <circle cx="650" cy="70" r="4.5"/><circle cx="730" cy="140" r="4.5"/><circle cx="630" cy="90" r="4.5"/>
   </g>
   <g fill="currentColor" font-size="14" text-anchor="middle">
     <text x="100" y="210">A · Preciso y exacto</text>
@@ -788,428 +738,333 @@ Objetivo: Convertir el distractor en instrumento de medición y evidenciar el er
     <text x="700" y="210">D · Impreciso, con sesgo</text>
   </g>
 </svg>
-<p>El centro de cada blanco es el valor de referencia.</p>
-<p><strong>Discusión:</strong> ¿qué patrón se corrige aumentando las réplicas? ¿Cuál requiere revisar el instrumento o el procedimiento?</p>
-<aside class="notes">
-<p>C mejora con más réplicas: la media converge a la referencia aunque cada lectura sea dispersa. B requiere calibración o revisión del método; más réplicas solo confirman el desplazamiento. D requiere ambas acciones.</p>
-<style type="text/css">
-        span.MJX_Assistive_MathML {
-          position:absolute!important;
-          clip: rect(1px, 1px, 1px, 1px);
-          padding: 1px 0 0 0!important;
-          border: 0!important;
-          height: 1px!important;
-          width: 1px!important;
-          overflow: hidden!important;
-          display:block!important;
-      }</style></aside>
-</section>
-<section id="dónde-vive-la-variabilidad-en-un-ensayo-de-concreto" class="slide level2 center">
-<h2>Dónde vive la variabilidad en un ensayo de concreto</h2>
-<table class="caption-top">
-<colgroup>
-<col style="width: 33%">
-<col style="width: 33%">
-<col style="width: 33%">
-</colgroup>
-<thead>
-<tr class="header">
-<th>Nivel</th>
-<th>Fuentes típicas</th>
-<th>Cómo se estima</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Entre jornadas</td>
-<td>Temperatura, humedad, lote de cemento, operador</td>
-<td>Bloques por jornada</td>
-</tr>
-<tr class="even">
-<td>Entre amasadas</td>
-<td>Pesaje, mezclado, humedad de agregados</td>
-<td>Amasadas replicadas por tratamiento</td>
-</tr>
-<tr class="odd">
-<td>Entre probetas</td>
-<td>Compactación, moldeo, curado, cabeceo</td>
-<td>Varias probetas por amasada</td>
-</tr>
-<tr class="even">
-<td>Medición</td>
-<td>Máquina de ensayo, velocidad de carga</td>
-<td>Verificación, patrones, repetibilidad</td>
-</tr>
-</tbody>
-</table>
-<p><span class="math display">\[
+```
+
+El centro de cada blanco es el valor de referencia.
+
+**Discusión:** ¿qué patrón se corrige aumentando las réplicas? ¿Cuál requiere revisar el instrumento o el procedimiento?
+
+::: {.notes}
+C mejora con más réplicas: la media converge a la referencia aunque cada lectura sea dispersa. B requiere calibración o revisión del método; más réplicas solo confirman el desplazamiento. D requiere ambas acciones.
+:::
+
+## Dónde vive la variabilidad en un ensayo de concreto
+
+| Nivel | Fuentes típicas | Cómo se estima |
+|---|---|---|
+| Entre jornadas | Temperatura, humedad, lote de cemento, operador | Bloques por jornada |
+| Entre amasadas | Pesaje, mezclado, humedad de agregados | Amasadas replicadas por tratamiento |
+| Entre probetas | Compactación, moldeo, curado, cabeceo | Varias probetas por amasada |
+| Medición | Máquina de ensayo, velocidad de carga | Verificación, patrones, repetibilidad |
+
+$$
 \sigma^2_{\text{total}}=\sigma^2_{\text{jornada}}+\sigma^2_{\text{amasada}}+\sigma^2_{\text{probeta}}+\sigma^2_{\text{medición}}
-\]</span></p>
-<div class="callout callout-note callout-titled callout-style-default">
-<div class="callout-body">
-<div class="callout-title">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<p><strong>Nota</strong></p>
-</div>
-<div class="callout-content">
-<p>En un ensayo destructivo, con una sola lectura por probeta, <span class="math inline">\(\sigma^2_{\text{probeta}}\)</span> y <span class="math inline">\(\sigma^2_{\text{medición}}\)</span> no pueden separarse.</p>
-</div>
-</div>
-</div>
-<p><strong>Retomar la pregunta inicial:</strong> ¿en qué niveles pudo originarse la diferencia entre las tres probetas?</p>
-<aside class="notes">
-<p>La descomposición aditiva supone componentes independientes; es un modelo de trabajo, no una ley. Esta lámina articula error de medición, réplica y bloqueo.</p>
-<style type="text/css">
-        span.MJX_Assistive_MathML {
-          position:absolute!important;
-          clip: rect(1px, 1px, 1px, 1px);
-          padding: 1px 0 0 0!important;
-          border: 0!important;
-          height: 1px!important;
-          width: 1px!important;
-          overflow: hidden!important;
-          display:block!important;
-      }</style></aside>
-</section>
-<section id="métricas-básicas" class="slide level2 center">
-<h2>Métricas básicas</h2>
-<p>Sea <span class="math inline">\(y_i\)</span> el valor medido y <span class="math inline">\(y_{\mathrm{ref}}\)</span> el valor de referencia.</p>
-<p><strong>Error absoluto</strong></p>
-<p><span class="math display">\[
+$$
+
+::: {.callout-note}
+En un ensayo destructivo, con una sola lectura por probeta, $\sigma^2_{\text{probeta}}$ y $\sigma^2_{\text{medición}}$ no pueden separarse.
+:::
+
+**Retomar la pregunta inicial:** ¿en qué niveles pudo originarse la diferencia entre las tres probetas?
+
+::: {.notes}
+La descomposición aditiva supone componentes independientes; es un modelo de trabajo, no una ley. Esta lámina articula error de medición, réplica y bloqueo.
+:::
+
+## Métricas básicas
+
+Sea $y_i$ el valor medido y $y_{\mathrm{ref}}$ el valor de referencia.
+
+**Error absoluto**
+
+$$
 E_a = |\Delta_i| = |y_i-y_{\mathrm{ref}}|
-\]</span></p>
-<p><strong>Error relativo porcentual</strong></p>
-<p><span class="math display">\[
+$$
+
+**Error relativo porcentual**
+
+$$
 E_r(\%) = \frac{|y_i-y_{\mathrm{ref}}|}{|y_{\mathrm{ref}}|}\,100
-\]</span></p>
-<p>El error relativo no es apropiado cuando el valor de referencia es cero o muy cercano a cero. En esos casos, conviene informar el error absoluto u otra métrica adecuada al contexto.</p>
-</section>
-<section id="sesgo-y-dispersión" class="slide level2 center">
-<h2>Sesgo y dispersión</h2>
-<p>Para <span class="math inline">\(n\)</span> mediciones <span class="math inline">\(y_i\)</span> de un mismo material o patrón:</p>
-<p><strong>Media</strong></p>
-<p><span class="math display">\[
+$$
+
+El error relativo no es apropiado cuando el valor de referencia es cero o muy cercano a cero. En esos casos, conviene informar el error absoluto u otra métrica adecuada al contexto.
+
+## Sesgo y dispersión
+
+Para $n$ mediciones $y_i$ de un mismo material o patrón:
+
+**Media**
+
+$$
 \bar y = \frac{1}{n}\sum_{i=1}^{n} y_i
-\]</span></p>
-<p><strong>Sesgo estimado respecto a una referencia</strong></p>
-<p><span class="math display">\[
+$$
+
+**Sesgo estimado respecto a una referencia**
+
+$$
 b = \bar y-y_{\mathrm{ref}}
-\]</span></p>
-<p><strong>Desviación estándar muestral</strong></p>
-<p><span class="math display">\[
+$$
+
+**Desviación estándar muestral**
+
+$$
 s = \sqrt{\frac{\sum_{i=1}^{n}(y_i-\bar y)^2}{n-1}}
-\]</span></p>
-<p>El sesgo resume el desplazamiento respecto de la referencia; la desviación estándar resume la dispersión de las lecturas. Debe comprobarse que las mediciones sean comparables y que el valor de referencia sea apropiado.</p>
-</section>
-<section id="coeficiente-de-variación-cv" class="slide level2 center">
-<h2>Coeficiente de variación (CV)</h2>
-<p><span class="math display">\[
+$$
+
+El sesgo resume el desplazamiento respecto de la referencia; la desviación estándar resume la dispersión de las lecturas. Debe comprobarse que las mediciones sean comparables y que el valor de referencia sea apropiado.
+
+## Coeficiente de variación (CV)
+
+$$
 CV(\%)=\frac{s}{|\bar y|}\,100
-\]</span></p>
-<p>Expresa la desviación estándar como porcentaje de la magnitud media.</p>
-<p><strong>Uso:</strong> comparar la dispersión relativa de variables en escala de razón (MPa, kN, mm) y de escalas diferentes, cuando la media es suficientemente distinta de cero.</p>
-<p><strong>Limitación:</strong> un CV pequeño no garantiza ausencia de sesgo. Un conjunto de resultados puede ser muy consistente y, aun así, estar desplazado respecto del valor de referencia.</p>
-</section>
-<section id="ejemplo-numérico-verificar-una-medición" class="slide level2 center">
-<h2>Ejemplo numérico · Verificar una medición</h2>
-<p>Una celda de carga patrón aplica 300,0 kN y el indicador de la máquina de ensayo marca 291,0 kN.</p>
-<p><span class="math display">\[
+$$
+
+Expresa la desviación estándar como porcentaje de la magnitud media.
+
+**Uso:** comparar la dispersión relativa de variables en escala de razón (MPa, kN, mm) y de escalas diferentes, cuando la media es suficientemente distinta de cero.
+
+**Limitación:** un CV pequeño no garantiza ausencia de sesgo. Un conjunto de resultados puede ser muy consistente y, aun así, estar desplazado respecto del valor de referencia.
+
+## Ejemplo numérico · Verificar una medición
+
+Una celda de carga patrón aplica 300,0 kN y el indicador de la máquina de ensayo marca 291,0 kN.
+
+$$
 E_a=|291{,}0-300{,}0|=9{,}0\ \text{kN}
-\]</span></p>
-<p><span class="math display">\[
+$$
+
+$$
 E_r=\frac{9{,}0}{300{,}0}\times100=3{,}0\ \%
-\]</span></p>
-<p><strong>Interpretación:</strong> la lectura está 9,0 kN por debajo de la referencia, equivalente al 3 % de su magnitud.</p>
-<p>Esto no determina por sí solo si la máquina es aceptable: hace falta un criterio de aceptación definido para el uso previsto y considerar la incertidumbre de la referencia y del sistema de medición.</p>
-<aside class="notes">
-<p>Preguntar al grupo si 3 % les parece aceptable. Los criterios usuales de verificación de máquinas de ensayo a compresión son del orden de ±1 % de la carga aplicada (p.&nbsp;ej., ASTM E4; verificar la norma vigente), por lo que este caso requeriría intervención.</p>
-<style type="text/css">
-        span.MJX_Assistive_MathML {
-          position:absolute!important;
-          clip: rect(1px, 1px, 1px, 1px);
-          padding: 1px 0 0 0!important;
-          border: 0!important;
-          height: 1px!important;
-          width: 1px!important;
-          overflow: hidden!important;
-          display:block!important;
-      }</style></aside>
-</section>
-<section id="métricas-para-evaluar-predicciones" class="slide level2 center">
-<h2>Métricas para evaluar predicciones</h2>
-<p>Si se compara una predicción <span class="math inline">\(\hat y_i\)</span> con un valor observado <span class="math inline">\(y_i\)</span>, pueden usarse:</p>
-<p><strong>MAE — error absoluto medio</strong></p>
-<p><span class="math display">\[
+$$
+
+**Interpretación:** la lectura está 9,0 kN por debajo de la referencia, equivalente al 3 % de su magnitud.
+
+Esto no determina por sí solo si la máquina es aceptable: hace falta un criterio de aceptación definido para el uso previsto y considerar la incertidumbre de la referencia y del sistema de medición.
+
+::: {.notes}
+Preguntar al grupo si 3 % les parece aceptable. Los criterios usuales de verificación de máquinas de ensayo a compresión son del orden de ±1 % de la carga aplicada (p. ej., ASTM E4; verificar la norma vigente), por lo que este caso requeriría intervención.
+:::
+
+## Métricas para evaluar predicciones
+
+Si se compara una predicción $\hat y_i$ con un valor observado $y_i$, pueden usarse:
+
+**MAE — error absoluto medio**
+
+$$
 MAE=\frac{1}{n}\sum_{i=1}^{n}|y_i-\hat y_i|
-\]</span></p>
-<p><strong>RMSE — raíz del error cuadrático medio</strong></p>
-<p><span class="math display">\[
+$$
+
+**RMSE — raíz del error cuadrático medio**
+
+$$
 RMSE=\sqrt{\frac{1}{n}\sum_{i=1}^{n}(y_i-\hat y_i)^2}
-\]</span></p>
-<ul>
-<li>MAE expresa el error absoluto típico en las unidades de la respuesta.</li>
-<li>RMSE penaliza más los errores grandes y siempre es mayor o igual que MAE.</li>
-<li>Calcúlalas con datos no usados para ajustar el modelo: en la muestra de ajuste resultan optimistas.</li>
-</ul>
-<p>No identifican la causa del error ni sustituyen el análisis de incertidumbre del instrumento.</p>
-<aside class="notes">
-<p>Opcional si falta tiempo. Es el puente con el uso de modelos (RSM, ML) en las unidades posteriores.</p>
-<style type="text/css">
-        span.MJX_Assistive_MathML {
-          position:absolute!important;
-          clip: rect(1px, 1px, 1px, 1px);
-          padding: 1px 0 0 0!important;
-          border: 0!important;
-          height: 1px!important;
-          width: 1px!important;
-          overflow: hidden!important;
-          display:block!important;
-      }</style></aside>
-</section>
-<section id="residuos-y-diagnóstico-del-modelo" class="slide level2 center">
-<h2>Residuos y diagnóstico del modelo</h2>
-<p>El residuo de una observación es:</p>
-<p><span class="math display">\[
+$$
+
+- MAE expresa el error absoluto típico en las unidades de la respuesta.
+- RMSE penaliza más los errores grandes y siempre es mayor o igual que MAE.
+- Calcúlalas con datos no usados para ajustar el modelo: en la muestra de ajuste resultan optimistas.
+
+No identifican la causa del error ni sustituyen el análisis de incertidumbre del instrumento.
+
+::: {.notes}
+Opcional si falta tiempo. Es el puente con el uso de modelos (RSM, ML) en las unidades posteriores.
+:::
+
+## Residuos y diagnóstico del modelo
+
+El residuo de una observación es:
+
+$$
 e_i=y_i-\hat y_i
-\]</span></p>
-<p>Revisar solo una métrica agregada puede ocultar problemas. Conviene inspeccionar:</p>
-<ul>
-<li>Residuos frente a valores predichos.</li>
-<li>Residuos frente al orden de ejecución.</li>
-<li>Residuos por lote, operador o nivel del factor.</li>
-<li>Valores influyentes y patrones de dispersión.</li>
-<li>Supuestos del modelo que sean relevantes para la inferencia.</li>
-</ul>
-<p>Un patrón en los residuos puede indicar falta de ajuste, heterogeneidad de varianza, dependencia temporal o una variable omitida. No demuestra automáticamente cuál es la causa.</p>
-</section>
-<section id="valores-atípicos-investigar-no-borrar" class="slide level2 center">
-<h2>Valores atípicos: investigar, no borrar</h2>
-<p>Ante una observación extrema:</p>
-<ol type="1">
-<li>Verificar la transcripción, las unidades y el identificador.</li>
-<li>Revisar el instrumento, el montaje y el protocolo.</li>
-<li>Consultar el registro de incidencias.</li>
-<li>Aplicar un criterio estadístico apropiado, si corresponde (p.&nbsp;ej., Grubbs o Dixon, que suponen normalidad; en modelos, residuos estandarizados y distancia de Cook).</li>
-<li>Documentar la decisión y evaluar su impacto en las conclusiones.</li>
-</ol>
-<p>Eliminar un dato solo porque “se ve raro” introduce sesgo. Si no existe evidencia de error, el valor puede representar variabilidad real del sistema.</p>
-</section>
-<section id="incertidumbre-y-tolerancia" class="slide level2 center">
-<h2>Incertidumbre y tolerancia</h2>
-<p>La incertidumbre expresa qué tan dispersos pueden ser los valores atribuibles al mensurando. La tolerancia es un límite de aceptación definido por una norma, especificación o necesidad del proyecto.</p>
-<p>No son lo mismo:</p>
-<ul>
-<li>Una medición puede tener baja incertidumbre y no cumplir la especificación.</li>
-<li>Una medición cercana al límite requiere una regla de decisión que considere la incertidumbre.</li>
-<li>La conformidad no se decide únicamente mirando el número de decimales.</li>
-</ul>
-<p>En aplicaciones reguladas, deben seguirse la norma y la regla de decisión aplicables al ensayo.</p>
-</section>
-<section id="actividad-breve-3-calcular-e-interpretar" class="slide level2 center">
-<h2>Actividad breve 3 · Calcular e interpretar</h2>
-<p><strong>Tiempo: 8 minutos</strong></p>
-<p>Se aplicó cuatro veces una carga de referencia de 250,0 kN con una celda patrón. La máquina de ensayo indicó:</p>
-<p><span class="math display">\[
+$$
+
+Revisar solo una métrica agregada puede ocultar problemas. Conviene inspeccionar:
+
+- Residuos frente a valores predichos.
+- Residuos frente al orden de ejecución.
+- Residuos por lote, operador o nivel del factor.
+- Valores influyentes y patrones de dispersión.
+- Supuestos del modelo que sean relevantes para la inferencia.
+
+Un patrón en los residuos puede indicar falta de ajuste, heterogeneidad de varianza, dependencia temporal o una variable omitida. No demuestra automáticamente cuál es la causa.
+
+## Valores atípicos: investigar, no borrar
+
+Ante una observación extrema:
+
+1. Verificar la transcripción, las unidades y el identificador.
+2. Revisar el instrumento, el montaje y el protocolo.
+3. Consultar el registro de incidencias.
+4. Aplicar un criterio estadístico apropiado, si corresponde (p. ej., Grubbs o Dixon, que suponen normalidad; en modelos, residuos estandarizados y distancia de Cook).
+5. Documentar la decisión y evaluar su impacto en las conclusiones.
+
+Eliminar un dato solo porque "se ve raro" introduce sesgo. Si no existe evidencia de error, el valor puede representar variabilidad real del sistema.
+
+## Incertidumbre y tolerancia
+
+La incertidumbre expresa qué tan dispersos pueden ser los valores atribuibles al mensurando. La tolerancia es un límite de aceptación definido por una norma, especificación o necesidad del proyecto.
+
+No son lo mismo:
+
+- Una medición puede tener baja incertidumbre y no cumplir la especificación.
+- Una medición cercana al límite requiere una regla de decisión que considere la incertidumbre.
+- La conformidad no se decide únicamente mirando el número de decimales.
+
+En aplicaciones reguladas, deben seguirse la norma y la regla de decisión aplicables al ensayo.
+
+## Actividad breve 3 · Calcular e interpretar
+
+**Tiempo: 8 minutos**
+
+Se aplicó cuatro veces una carga de referencia de 250,0 kN con una celda patrón. La máquina de ensayo indicó:
+
+$$
 248;\quad 252;\quad 249;\quad 251\ \text{kN}
-\]</span></p>
-<p>En grupos:</p>
-<ol type="1">
-<li>Calculen la media.</li>
-<li>Estimen el sesgo respecto a 250,0 kN.</li>
-<li>Calculen la desviación estándar muestral y el CV.</li>
-<li>Expliquen si los datos permiten afirmar que la máquina es adecuada para cualquier aplicación.</li>
-</ol>
-<p><strong>Pista:</strong> una media próxima a la referencia no basta para evaluar todos los aspectos de calidad.</p>
-<aside class="notes">
-<p>Clave: media = 250,0 kN; sesgo = 0,0 kN; s ≈ 1,83 kN; CV ≈ 0,73 %. Para la pregunta 4: con n = 4, la media tiene un intervalo de confianza del 95 % de aproximadamente ±2,9 kN (t = 3,18; s/√4 ≈ 0,91 kN), es decir, ±1,2 % de la carga: un sesgo nulo no puede afirmarse. Además, solo se probó un nivel de carga, bajo condiciones de repetibilidad (mismo operador y día), y no se conoce la incertidumbre de la celda patrón.</p>
-<style type="text/css">
-        span.MJX_Assistive_MathML {
-          position:absolute!important;
-          clip: rect(1px, 1px, 1px, 1px);
-          padding: 1px 0 0 0!important;
-          border: 0!important;
-          height: 1px!important;
-          width: 1px!important;
-          overflow: hidden!important;
-          display:block!important;
-      }</style></aside>
-</section></section>
-<section>
-<section id="caso-aplicado-en-ingeniería-civil" class="title-slide slide level1 center">
-<h1>4. Caso aplicado en ingeniería civil</h1>
+$$
 
-</section>
-<section id="caso-integrador-resistencia-del-concreto" class="slide level2 center">
-<h2>Caso integrador · Resistencia del concreto</h2>
-<p>Un laboratorio desea estudiar si el porcentaje de sustitución de cemento por una adición mineral cambia la resistencia a compresión a 28 días.</p>
-<ul>
-<li><strong>Factor de interés:</strong> porcentaje de sustitución: 0, 5, 10, 15 y 20 %.</li>
-<li><strong>Fuentes de variación a controlar:</strong> jornada de fabricación (tres disponibles) y operador (dos habilitados).</li>
-<li><strong>Respuesta:</strong> resistencia a compresión (MPa).</li>
-</ul>
-<p><strong>Objetivo:</strong> proponer un plan de recopilación y control de calidad que permita comparar tratamientos sin confundir sus efectos con diferencias de procedimiento.</p>
-</section>
-<section id="trabajo-en-equipos-diseñar-el-plan-de-datos" class="slide level2 center">
-<h2>Trabajo en equipos · Diseñar el plan de datos</h2>
-<p><strong>Tiempo: 15 minutos</strong></p>
-<p>Entregable: una hoja o diapositiva con estos apartados.</p>
-<ol type="1">
-<li>Método de ensayo y variable de respuesta.</li>
-<li>Unidad experimental, unidades de observación por unidad experimental, número preliminar de réplicas y justificación.</li>
-<li>Variables que deben controlarse y variables que conviene registrar.</li>
-<li>Estrategia de aleatorización o bloqueo.</li>
-<li>Controles QA antes de empezar y QC durante el ensayo.</li>
-<li>Tres métricas o verificaciones para revisar la calidad.</li>
-<li>Regla documentada para gestionar datos faltantes o resultados atípicos.</li>
-</ol>
-<p>No se espera que el equipo resuelva todos los detalles técnicos; debe identificar qué decisiones necesita fijar antes de medir.</p>
-</section>
-<section id="criterios-para-evaluar-las-propuestas" class="slide level2 center">
-<h2>Criterios para evaluar las propuestas</h2>
-<p>Una propuesta defendible debería incluir:</p>
-<ul>
-<li>Procedimiento de fabricación, curado y ensayo común a los tratamientos.</li>
-<li>Identificación inequívoca de probetas y amasadas.</li>
-<li>Distribución de tratamientos entre jornadas para evitar confundir tratamiento con día.</li>
-<li>Equipo apropiado y calibración o verificación vigente.</li>
-<li>Registro de datos originales, unidades, operador e incidencias.</li>
-<li>Réplicas independientes (amasadas, no solo probetas) suficientes para estimar la variabilidad.</li>
-<li>Revisión de dispersión, posibles sesgos y residuos del modelo.</li>
-<li>Criterios de exclusión o repetición definidos antes de conocer los resultados.</li>
-</ul>
-<p>La cantidad final de amasadas y probetas debe ajustarse a la variabilidad esperada, el efecto de interés y los recursos disponibles.</p>
-</section>
-<section id="una-solución-de-referencia-bloques-completos-al-azar" class="slide level2 center">
-<h2>Una solución de referencia: bloques completos al azar</h2>
-<table class="caption-top">
-<colgroup>
-<col style="width: 50%">
-<col style="width: 50%">
-</colgroup>
-<thead>
-<tr class="header">
-<th>Elemento</th>
-<th>Decisión</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Bloques</td>
-<td>3 jornadas</td>
-</tr>
-<tr class="even">
-<td>Tratamientos</td>
-<td>5 porcentajes, todos presentes en cada jornada</td>
-</tr>
-<tr class="odd">
-<td>Unidades experimentales</td>
-<td>15 amasadas (5 por jornada)</td>
-</tr>
-<tr class="even">
-<td>Aleatorización</td>
-<td>Orden de las amasadas dentro de cada jornada y orden de ensayo</td>
-</tr>
-<tr class="odd">
-<td>Submuestras</td>
-<td>3 probetas por amasada (45 en total), mismo molde y curado</td>
-</tr>
-<tr class="even">
-<td>Operadores</td>
-<td>Distribuidos de forma balanceada entre tratamientos</td>
-</tr>
-<tr class="odd">
-<td>Análisis</td>
-<td>ANOVA con bloques sobre el promedio por amasada, o modelo mixto</td>
-</tr>
-</tbody>
-</table>
-<p>Grados de libertad del error: <span class="math inline">\((5-1)(3-1)=8\)</span>.</p>
-<p>Es una opción defendible entre varias. Con pocos grados de libertad, la potencia es limitada: conviene estimar la variabilidad previa antes de fijar el número de amasadas.</p>
-<aside class="notes">
-<p>Mostrar después de la puesta en común, no antes. Comparar con las propuestas de los equipos: ¿identificaron la amasada como unidad experimental? ¿Evitaron confundir tratamiento con jornada?</p>
-<style type="text/css">
-        span.MJX_Assistive_MathML {
-          position:absolute!important;
-          clip: rect(1px, 1px, 1px, 1px);
-          padding: 1px 0 0 0!important;
-          border: 0!important;
-          height: 1px!important;
-          width: 1px!important;
-          overflow: hidden!important;
-          display:block!important;
-      }</style></aside>
-</section>
-<section id="puesta-en-común-preguntas-críticas" class="slide level2 center">
-<h2>Puesta en común: preguntas críticas</h2>
-<p>Cada equipo debe defender sus decisiones:</p>
-<ul>
-<li>¿Qué error podría invalidar la comparación entre mezclas?</li>
-<li>¿Qué variable de confusión es más probable?</li>
-<li>¿Qué evidencia mostraría que el sistema de medición funciona adecuadamente?</li>
-<li>¿Cómo distinguirían variabilidad del concreto de variabilidad del equipo?</li>
-<li>¿Qué harían si una probeta se pierde o se rompe antes del ensayo?</li>
-<li>¿Qué conclusiones no podrían sostener con el diseño propuesto?</li>
-</ul>
-<p>Una buena respuesta no es la que enumera más controles, sino la que vincula cada control con un riesgo concreto.</p>
-</section></section>
-<section>
-<section id="síntesis-y-cierre" class="title-slide slide level1 center">
-<h1>5. Síntesis y cierre</h1>
+En grupos:
 
-</section>
-<section id="lista-de-comprobación-antes-de-recopilar-datos" class="slide level2 center">
-<h2>Lista de comprobación antes de recopilar datos</h2>
-<ul class="task-list">
-<li><label><input type="checkbox">La variable de respuesta está definida y tiene unidades.</label></li>
-<li><label><input type="checkbox">El método de medición es apropiado para el objetivo.</label></li>
-<li><label><input type="checkbox">La unidad experimental y la réplica están identificadas correctamente.</label></li>
-<li><label><input type="checkbox">Los instrumentos están verificados y, cuando corresponda, calibrados.</label></li>
-<li><label><input type="checkbox">El protocolo, el muestreo y los criterios de aceptación están documentados.</label></li>
-<li><label><input type="checkbox">La aleatorización y el bloqueo se han considerado.</label></li>
-<li><label><input type="checkbox">Se ha preparado una plantilla de registro con trazabilidad.</label></li>
-<li><label><input type="checkbox">Se definió cómo investigar desviaciones y datos atípicos.</label></li>
-<li><label><input type="checkbox">Se planificó el análisis estadístico antes de observar los resultados.</label></li>
-</ul>
-</section>
-<section id="cinco-ideas-para-recordar" class="slide level2 center">
-<h2>Cinco ideas para recordar</h2>
-<ol type="1">
-<li>El método de recopilación debe responder a la pregunta experimental.</li>
-<li>QA construye un sistema para prevenir problemas; QC comprueba resultados y procesos.</li>
-<li>Exactitud, precisión, resolución e incertidumbre describen aspectos distintos.</li>
-<li>Las réplicas son unidades experimentales independientes; las submuestras y las lecturas repetidas no lo son.</li>
-<li>Los datos atípicos deben investigarse y documentarse, no eliminarse por conveniencia.</li>
-</ol>
-<p><strong>La calidad del análisis comienza con la calidad del diseño y de las mediciones.</strong></p>
-</section>
-<section id="comprobación-final" class="slide level2 center">
-<h2>Comprobación final</h2>
-<p>Antes de dar por válido un experimento, responde:</p>
-<ul>
-<li>¿Puedo rastrear cada resultado hasta su muestra, procedimiento y equipo?</li>
-<li>¿Puedo explicar qué variabilidad es experimental y cuál puede provenir de la medición?</li>
-<li>¿Tengo evidencia de que el método fue adecuado para la decisión que quiero tomar?</li>
-<li>¿Mis conclusiones siguen siendo razonables si investigo las observaciones más influyentes?</li>
-</ul>
-<p>Si no puedes responder estas preguntas, el análisis estadístico por sí solo no resolverá el problema.</p>
-</section>
-<section id="referencias-y-consulta-técnica" class="slide level2 center">
-<h2>Referencias y consulta técnica</h2>
-<p>Contrastar los procedimientos específicos con la norma vigente del ensayo y con los manuales de los equipos.</p>
-<ul>
-<li>JCGM 200:2012. <em>Vocabulario Internacional de Metrología (VIM)</em>, 3.ª ed.</li>
-<li>JCGM 100:2008. <em>Guía para la expresión de la incertidumbre de medida (GUM)</em>.</li>
-<li>ISO 5725 (serie). <em>Exactitud (veracidad y precisión) de métodos y resultados de medición</em>.</li>
-<li>ISO/IEC 17025:2017. <em>Requisitos generales para la competencia de los laboratorios de ensayo y calibración</em> (cláusulas 7.7 y 7.8.6).</li>
-<li>ILAC-G8. <em>Reglas de decisión y declaraciones de conformidad</em>.</li>
-<li>Montgomery, D. C. <em>Design and Analysis of Experiments</em>.</li>
-<li>Box, G. E. P., Hunter, J. S. y Hunter, W. G. <em>Statistics for Experimenters</em>.</li>
-<li>Hurlbert, S. H. (1984). Pseudoreplication and the design of ecological field experiments. <em>Ecological Monographs</em>, 54(2), 187–211.</li>
-<li>ASTM C39 / NTC 673 (compresión de cilindros); ASTM C192 / NTC 1377 (elaboración y curado en laboratorio); ASTM E4 (verificación de fuerza); ASTM E178 (observaciones atípicas).</li>
-</ul>
-<p>Verificar numeración, equivalencias NTC, edición y vigencia antes de incluir citas formales en un documento académico.</p>
+1. Calculen la media.
+2. Estimen el sesgo respecto a 250,0 kN.
+3. Calculen la desviación estándar muestral y el CV.
+4. Expliquen si los datos permiten afirmar que la máquina es adecuada para cualquier aplicación.
+
+**Pista:** una media próxima a la referencia no basta para evaluar todos los aspectos de calidad.
+
+::: {.notes}
+Clave: media = 250,0 kN; sesgo = 0,0 kN; s ≈ 1,83 kN; CV ≈ 0,73 %.
+Para la pregunta 4: con n = 4, la media tiene un intervalo de confianza del 95 % de aproximadamente ±2,9 kN (t = 3,18; s/√4 ≈ 0,91 kN), es decir, ±1,2 % de la carga: un sesgo nulo no puede afirmarse. Además, solo se probó un nivel de carga, bajo condiciones de repetibilidad (mismo operador y día), y no se conoce la incertidumbre de la celda patrón.
+:::
+
+# 4. Caso aplicado en ingeniería civil
+
+## Caso integrador · Resistencia del concreto
+
+Un laboratorio desea estudiar si el porcentaje de sustitución de cemento por una adición mineral cambia la resistencia a compresión a 28 días.
+
+- **Factor de interés:** porcentaje de sustitución: 0, 5, 10, 15 y 20 %.
+- **Fuentes de variación a controlar:** jornada de fabricación (tres disponibles) y operador (dos habilitados).
+- **Respuesta:** resistencia a compresión (MPa).
+
+**Objetivo:** proponer un plan de recopilación y control de calidad que permita comparar tratamientos sin confundir sus efectos con diferencias de procedimiento.
+
+## Trabajo en equipos · Diseñar el plan de datos
+
+**Tiempo: 15 minutos**
+
+Entregable: una hoja o diapositiva con estos apartados.
+
+1. Método de ensayo y variable de respuesta.
+2. Unidad experimental, unidades de observación por unidad experimental, número preliminar de réplicas y justificación.
+3. Variables que deben controlarse y variables que conviene registrar.
+4. Estrategia de aleatorización o bloqueo.
+5. Controles QA antes de empezar y QC durante el ensayo.
+6. Tres métricas o verificaciones para revisar la calidad.
+7. Regla documentada para gestionar datos faltantes o resultados atípicos.
+
+No se espera que el equipo resuelva todos los detalles técnicos; debe identificar qué decisiones necesita fijar antes de medir.
+
+## Criterios para evaluar las propuestas
+
+Una propuesta defendible debería incluir:
+
+- Procedimiento de fabricación, curado y ensayo común a los tratamientos.
+- Identificación inequívoca de probetas y amasadas.
+- Distribución de tratamientos entre jornadas para evitar confundir tratamiento con día.
+- Equipo apropiado y calibración o verificación vigente.
+- Registro de datos originales, unidades, operador e incidencias.
+- Réplicas independientes (amasadas, no solo probetas) suficientes para estimar la variabilidad.
+- Revisión de dispersión, posibles sesgos y residuos del modelo.
+- Criterios de exclusión o repetición definidos antes de conocer los resultados.
+
+La cantidad final de amasadas y probetas debe ajustarse a la variabilidad esperada, el efecto de interés y los recursos disponibles.
+
+## Una solución de referencia: bloques completos al azar
+
+| Elemento | Decisión |
+|---|---|
+| Bloques | 3 jornadas |
+| Tratamientos | 5 porcentajes, todos presentes en cada jornada |
+| Unidades experimentales | 15 amasadas (5 por jornada) |
+| Aleatorización | Orden de las amasadas dentro de cada jornada y orden de ensayo |
+| Submuestras | 3 probetas por amasada (45 en total), mismo molde y curado |
+| Operadores | Distribuidos de forma balanceada entre tratamientos |
+| Análisis | ANOVA con bloques sobre el promedio por amasada, o modelo mixto |
+
+Grados de libertad del error: $(5-1)(3-1)=8$.
+
+Es una opción defendible entre varias. Con pocos grados de libertad, la potencia es limitada: conviene estimar la variabilidad previa antes de fijar el número de amasadas.
+
+::: {.notes}
+Mostrar después de la puesta en común, no antes. Comparar con las propuestas de los equipos: ¿identificaron la amasada como unidad experimental? ¿Evitaron confundir tratamiento con jornada?
+:::
+
+## Puesta en común: preguntas críticas
+
+Cada equipo debe defender sus decisiones:
+
+- ¿Qué error podría invalidar la comparación entre mezclas?
+- ¿Qué variable de confusión es más probable?
+- ¿Qué evidencia mostraría que el sistema de medición funciona adecuadamente?
+- ¿Cómo distinguirían variabilidad del concreto de variabilidad del equipo?
+- ¿Qué harían si una probeta se pierde o se rompe antes del ensayo?
+- ¿Qué conclusiones no podrían sostener con el diseño propuesto?
+
+Una buena respuesta no es la que enumera más controles, sino la que vincula cada control con un riesgo concreto.
+
+# 5. Síntesis y cierre
+
+## Lista de comprobación antes de recopilar datos
+
+- [ ] La variable de respuesta está definida y tiene unidades.
+- [ ] El método de medición es apropiado para el objetivo.
+- [ ] La unidad experimental y la réplica están identificadas correctamente.
+- [ ] Los instrumentos están verificados y, cuando corresponda, calibrados.
+- [ ] El protocolo, el muestreo y los criterios de aceptación están documentados.
+- [ ] La aleatorización y el bloqueo se han considerado.
+- [ ] Se ha preparado una plantilla de registro con trazabilidad.
+- [ ] Se definió cómo investigar desviaciones y datos atípicos.
+- [ ] Se planificó el análisis estadístico antes de observar los resultados.
+
+## Cinco ideas para recordar
+
+1. El método de recopilación debe responder a la pregunta experimental.
+2. QA construye un sistema para prevenir problemas; QC comprueba resultados y procesos.
+3. Exactitud, precisión, resolución e incertidumbre describen aspectos distintos.
+4. Las réplicas son unidades experimentales independientes; las submuestras y las lecturas repetidas no lo son.
+5. Los datos atípicos deben investigarse y documentarse, no eliminarse por conveniencia.
+
+**La calidad del análisis comienza con la calidad del diseño y de las mediciones.**
+
+## Comprobación final
+
+Antes de dar por válido un experimento, responde:
+
+- ¿Puedo rastrear cada resultado hasta su muestra, procedimiento y equipo?
+- ¿Puedo explicar qué variabilidad es experimental y cuál puede provenir de la medición?
+- ¿Tengo evidencia de que el método fue adecuado para la decisión que quiero tomar?
+- ¿Mis conclusiones siguen siendo razonables si investigo las observaciones más influyentes?
+
+Si no puedes responder estas preguntas, el análisis estadístico por sí solo no resolverá el problema.
+
+## Referencias y consulta técnica
+
+Contrastar los procedimientos específicos con la norma vigente del ensayo y con los manuales de los equipos.
+
+- JCGM 200:2012. *Vocabulario Internacional de Metrología (VIM)*, 3.ª ed.
+- JCGM 100:2008. *Guía para la expresión de la incertidumbre de medida (GUM)*.
+- ISO 5725 (serie). *Exactitud (veracidad y precisión) de métodos y resultados de medición*.
+- ISO/IEC 17025:2017. *Requisitos generales para la competencia de los laboratorios de ensayo y calibración* (cláusulas 7.7 y 7.8.6).
+- ILAC-G8. *Reglas de decisión y declaraciones de conformidad*.
+- Montgomery, D. C. *Design and Analysis of Experiments*.
+- Box, G. E. P., Hunter, J. S. y Hunter, W. G. *Statistics for Experimenters*.
+- Hurlbert, S. H. (1984). Pseudoreplication and the design of ecological field experiments. *Ecological Monographs*, 54(2), 187–211.
+- ASTM C39 / NTC 673 (compresión de cilindros); ASTM C192 / NTC 1377 (elaboración y curado en laboratorio); ASTM E4 (verificación de fuerza); ASTM E178 (observaciones atípicas).
+
+Verificar numeración, equivalencias NTC, edición y vigencia antes de incluir citas formales en un documento académico.
+
+-->
 
 
 </section></section>
