@@ -2,6 +2,6 @@ project:
   type: default
   output-dir: docs
   render:
-    - index.qmd
-    - unidad3.qmd
+    - unit1/index.qmd
+    - unit1/unidad3.qmd
 
